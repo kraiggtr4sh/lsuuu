@@ -45,9 +45,9 @@ window.MINDMAP_DATA = {
           archiveCode: 'HỒ SƠ LƯU TRỮ: POL-XVI/XIX-01',
           deepAnalysis: 'Từ thế kỷ XVI (với việc Tây Ban Nha xâm chiếm Philippines, Bồ Đào Nha chiếm Malacca) đến cuối thế kỷ XIX, hầu hết các vương quốc phong kiến Đông Nam Á lần lượt rơi vào tay thực dân phương Tây (Anh, Pháp, Hà Lan, Tây Ban Nha, Mỹ). Quyền tối cao về ngoại giao, quân sự và tài chính đều bị tước đoạt qua các hiệp ước bất bình đẳng. Vương quốc Xiêm (Thái Lan) dưới triều vua Rama V (Chulalongkorn) là trường hợp duy nhất giữ được độc lập tương đối nhờ chính sách cải cách nội trị toàn diện và ngoại giao "cây tre" mềm dẻo lợi dụng vị trí vùng đệm giữa Anh và Pháp.',
           historicalEvidence: [
-            'Việt Nam, Lào, Campuchia bị thực dân Pháp thôn tính và gộp vào "Liên bang Đông Dương" (Union Indochinoise - 1887).',
+            'Việt Nam, Campuchia bị thực dân Pháp thôn tính và gộp vào "Liên bang Đông Dương" (Union Indochinoise - ngày 17/10/1887); đến năm 1893, Lào được sáp nhập vào Liên bang này.',
             'Indonesia trở thành thuộc địa "Đông Ấn Hà Lan" (Dutch East Indies) sau hàng thế kỷ bị Công ty Đông Ấn Hà Lan (VOC) và chính phủ Hà Lan kiểm soát.',
-            'Miến Điện (Myanmar), Mã Lai, Singapore, Brunei rơi vào tay thực dân Anh; Philippines chịu sự cai trị của Tây Ban Nha rồi chuyển sang Mỹ (1898).'
+            'Miến Điện (Myanmar), Mã Lai thuộc Anh (British Malaya), Singapore, Bắc Borneo và Brunei rơi vào tay thực dân Anh; Philippines chịu sự cai trị của Tây Ban Nha rồi chuyển sang Mỹ (1898).'
           ],
           dualImpact: {
             negative: 'Chấm dứt nền độc lập tự chủ hàng thiên niên kỷ của các dân tộc Đông Nam Á; biến toàn bộ khu vực thành thuộc địa phụ thuộc chính trị và căn cứ quân sự của các đế quốc thực dân.',
@@ -70,7 +70,7 @@ window.MINDMAP_DATA = {
           deepAnalysis: 'Để ngăn chặn sự đoàn kết kháng chiến của cư dân bản địa, các đế quốc thực dân triệt để thực thi chính sách "Chia để trị" (Divide et Impera). Chúng tự ý vẽ lại đường biên giới hành chính bất chấp lịch sử - tộc người, áp dụng các quy chế cai trị khác nhau trên cùng một quốc gia, đồng thời kích động sự kỳ thị giữa các dân tộc đa số và thiểu số, giữa người bản địa và cộng đồng di dân (như người Hoa, người Ấn).',
           historicalEvidence: [
             'Tại Việt Nam: Pháp chia cắt đất nước thành 3 xứ với 3 chế độ cai trị khác nhau: Nam Kỳ là xứ thuộc địa (Colonie), Bắc Kỳ là xứ nửa bảo hộ, Trung Kỳ là xứ bảo hộ (Protectorat).',
-            'Tại Mã Lai (Malaysia): Thực dân Anh phân tách vai trò kinh tế - chính trị theo sắc tộc: người Mã Lai làm nông nghiệp/hành chính cấp thấp, người Hoa nắm thương mại - khai mỏ, người Ấn làm đồn điền.',
+            'Tại Mã Lai thuộc Anh (British Malaya): Thực dân Anh phân tách vai trò kinh tế - chính trị theo sắc tộc: người Mã Lai làm nông nghiệp/hành chính cấp thấp, người Hoa nắm thương mại - khai mỏ, người Ấn làm đồn điền.',
             'Tại Miến Điện và Indonesia: Chính quyền thực dân tuyển mộ binh lính từ các nhóm dân tộc thiểu số (như người Karen, người Ambon) để đàn áp phong trào nổi dậy của dân tộc đa số.'
           ],
           dualImpact: {
@@ -276,8 +276,8 @@ window.MINDMAP_DATA = {
           deepAnalysis: 'Hệ quả xã hội quan trọng nhất ngoài ý muốn của thực dân là sự ra đời của các giai cấp và tầng lớp xã hội mới gắn liền với phương thức sản xuất tư bản chủ nghĩa và giáo dục tân học. Chính những lực lượng mới này đã khắc phục sự bế tắc của ý thức hệ phong kiến để đưa phong trào giải phóng dân tộc Đông Nam Á sang quỹ đạo hiện đại.',
           historicalEvidence: [
             'Giai cấp công nhân (vô sản) ra đời sớm tại các hầm mỏ, đồn điền, nhà máy, bến cảng; chịu 3 tầng áp bức nên có tinh thần cách mạng triệt để nhất.',
-            'Tầng lớp tiểu tư sản trí thức (sinh viên, nhà văn, nhà báo, giáo viên, công chức) nhạy bén với thời cuộc, đóng vai trò cầu nối truyền bá tư tưởng dân tộc chủ nghĩa và dân chủ.',
-            'Giai cấp tư sản dân tộc hình thành (như Bạch Thái Bưởi, Nguyễn Sơn Hà ở Việt Nam), dù bị tư bản ngoại bang chèn ép nhưng có khuynh hướng dân tộc, lập các đảng phái yêu nước (như Đảng Dân tộc ở Indonesia, Việt Nam Quốc dân Đảng).'
+            'Tầng lớp tiểu tư sản trí thức (học sinh, sinh viên, nhà văn, nhà báo, giáo viên, công chức) nhạy bén với thời cuộc, đóng vai trò cầu nối truyền bá tư tưởng dân tộc chủ nghĩa, dân chủ và là nòng cốt sáng lập nhiều tổ chức yêu nước.',
+            'Giai cấp tư sản dân tộc hình thành (như Bạch Thái Bưởi, Nguyễn Sơn Hà ở Việt Nam) bị tư bản ngoại bang chèn ép nên có tinh thần chống đế quốc; cùng với tầng lớp tiểu tư sản trí thức lập ra các đảng phái yêu nước theo khuynh hướng dân chủ tư sản (như Đảng Dân tộc Indonesia - PNI năm 1927, Việt Nam Quốc dân Đảng năm 1927 do Nguyễn Thái Học và các trí thức tiểu tư sản sáng lập).'
           ],
           dualImpact: {
             negative: 'Các giai cấp mới đều bị chính quyền thực dân kìm hãm về kinh tế và đàn áp gắt gao về chính trị ngay từ khi mới phôi thai.',
@@ -391,7 +391,7 @@ window.MINDMAP_DATA = {
       options: [
         'Vương quốc Xiêm (Thái Lan)',
         'Vương quốc Miến Điện (Myanmar)',
-        'Liên bang Mã Lai (Malaysia)',
+        'Mã Lai thuộc Anh (British Malaya)',
         'Quần đảo Philippines'
       ],
       correctIndex: 0,
