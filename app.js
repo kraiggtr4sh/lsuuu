@@ -97,9 +97,9 @@
       <circle cx="300" cy="155" r="54" fill="rgba(200,173,136,0.1)" stroke="#c8ad88" stroke-width="1.5"/>
       <path d="M275 170 L292 142 L308 162 L322 148 L335 170 Z" fill="none" stroke="#d8be98" stroke-width="2.2"/>
       <circle cx="288" cy="136" r="5" fill="#d8be98"/>
-      <text x="300" y="248" text-anchor="middle" fill="#ecd9bc" font-family="Georgia, serif" font-size="22" font-weight="bold">${titleEsc}</text>
-      <text x="300" y="280" text-anchor="middle" fill="#bfa582" font-family="Georgia, serif" font-style="italic" font-size="15">${captionEsc}</text>
-      <text x="300" y="340" text-anchor="middle" fill="#8c7558" font-family="monospace" font-size="12" letter-spacing="2">${leaf.archiveCode}</text>
+      <text x="300" y="248" text-anchor="middle" fill="#ecd9bc" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="bold">${titleEsc}</text>
+      <text x="300" y="280" text-anchor="middle" fill="#bfa582" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-style="italic" font-size="15">${captionEsc}</text>
+      <text x="300" y="340" text-anchor="middle" fill="#8c7558" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" letter-spacing="2">${leaf.archiveCode}</text>
     </svg>`;
     return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
   }
