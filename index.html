@@ -17,6 +17,25 @@
 <body>
   <div class="app-container">
     <!-- ====================================================================
+         MOBILE PORTRAIT ROTATE WARNING BANNER & OVERLAY
+         ==================================================================== -->
+    <div class="rotate-device-overlay" id="rotateDeviceOverlay" role="alert">
+      <div class="rotate-card">
+        <div class="rotate-icon-badge">
+          <i data-lucide="smartphone" class="w-8 h-8 rotate-phone-anim"></i>
+        </div>
+        <h2 class="rotate-title">Hãy xoay ngang điện thoại</h2>
+        <p class="rotate-desc">
+          Sơ đồ tư duy 4 nhánh được thiết kế tối ưu cho màn hình ngang. Vui lòng <strong>xoay ngang thiết bị (Landscape)</strong> để có trải nghiệm quan sát và tương tác tốt nhất!
+        </p>
+        <button class="rotate-dismiss-btn" id="dismissRotateBtn" type="button">
+          <span>Tiếp tục xem ở chế độ dọc</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ====================================================================
          TOP NAVIGATION BAR & FILTER BAR
          ==================================================================== -->
     <header class="top-navbar" role="banner">

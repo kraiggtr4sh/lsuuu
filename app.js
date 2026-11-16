@@ -793,6 +793,15 @@
       if (e.target === quizModalBackdrop) closeQuizModal();
     });
 
+    // Mobile Rotate Overlay Dismiss Button
+    const dismissRotateBtn = document.getElementById('dismissRotateBtn');
+    const rotateOverlay = document.getElementById('rotateDeviceOverlay');
+    if (dismissRotateBtn && rotateOverlay) {
+      dismissRotateBtn.addEventListener('click', () => {
+        rotateOverlay.classList.add('dismissed');
+      });
+    }
+
     // Keyboard Shortcuts (ESC to close drawer/modal, Left/Right arrows in drawer)
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
