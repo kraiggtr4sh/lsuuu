@@ -19,12 +19,12 @@ window.MINDMAP_DATA = {
        ====================================================================== */
     {
       id: 'branch-pol',
-      index: 'NHÁNH 01 • GÓC TRÊN TRÁI',
+      index: 'NHÁNH 01',
       name: 'CHÍNH TRỊ',
       quadrant: 'top-left',
-      color: '#e11d48',
-      colorSoft: '#ffe4e6',
-      colorGlow: 'rgba(225, 29, 72, 0.2)',
+      color: '#fda4af',
+      colorSoft: 'rgba(253, 164, 175, 0.16)',
+      colorGlow: 'rgba(253, 164, 175, 0.25)',
       icon: 'landmark',
       summary: 'Xóa bỏ chủ quyền độc lập bản địa, thiết lập ách cai trị chia để trị và du nhập mô hình hành chính thực dân.',
       x: 1090,
@@ -107,12 +107,12 @@ window.MINDMAP_DATA = {
        ====================================================================== */
     {
       id: 'branch-eco',
-      index: 'NHÁNH 02 • GÓC TRÊN PHẢI',
+      index: 'NHÁNH 02',
       name: 'KINH TẾ',
       quadrant: 'top-right',
-      color: '#d97706',
-      colorSoft: '#fef3c7',
-      colorGlow: 'rgba(217, 119, 6, 0.2)',
+      color: '#fcd34d',
+      colorSoft: 'rgba(252, 211, 77, 0.16)',
+      colorGlow: 'rgba(252, 211, 77, 0.25)',
       icon: 'coins',
       summary: 'Vơ vét cạn kiệt tài nguyên thiên nhiên, cột chặt kinh tế thuộc địa vào chính quốc nhưng đồng thời tạo dựng hạ tầng hiện đại.',
       x: 2110,
@@ -195,12 +195,12 @@ window.MINDMAP_DATA = {
        ====================================================================== */
     {
       id: 'branch-soc',
-      index: 'NHÁNH 03 • GÓC DƯỚI TRÁI',
+      index: 'NHÁNH 03',
       name: 'XÃ HỘI',
       quadrant: 'bottom-left',
-      color: '#059669',
-      colorSoft: '#d1fae5',
-      colorGlow: 'rgba(5, 150, 105, 0.2)',
+      color: '#6ee7b7',
+      colorSoft: 'rgba(110, 231, 183, 0.16)',
+      colorGlow: 'rgba(110, 231, 183, 0.25)',
       icon: 'users',
       summary: 'Đẩy đại đa số nông dân vào cảnh bần cùng, làm phân hóa giai cấp truyền thống và làm nảy sinh những lực lượng cách mạng mới.',
       x: 1090,
@@ -283,12 +283,12 @@ window.MINDMAP_DATA = {
        ====================================================================== */
     {
       id: 'branch-cul',
-      index: 'NHÁNH 04 • GÓC DƯỚI PHẢI',
+      index: 'NHÁNH 04',
       name: 'VĂN HÓA - GIÁO DỤC',
       quadrant: 'bottom-right',
-      color: '#7c3aed',
-      colorSoft: '#ede9fe',
-      colorGlow: 'rgba(124, 58, 237, 0.2)',
+      color: '#c4b5fd',
+      colorSoft: 'rgba(196, 181, 253, 0.16)',
+      colorGlow: 'rgba(196, 181, 253, 0.25)',
       icon: 'book-open',
       summary: 'Thực thi chính sách ngu dân và văn hóa nô dịch, song vô tình mở đường cho sự tiếp biến văn hóa và luồng tư tưởng tiến bộ.',
       x: 2110,
@@ -374,7 +374,7 @@ window.MINDMAP_DATA = {
     {
       id: 1,
       category: 'NHÁNH CHÍNH TRỊ',
-      branchColor: '#e05755',
+      branchColor: '#fda4af',
       question: 'Trong bối cảnh hầu hết các nước Đông Nam Á đều biến thành thuộc địa hoặc nửa thuộc địa của phương Tây (thế kỷ XVI - XX), quốc gia nào duy nhất giữ được độc lập về danh nghĩa nhờ cải cách và ngoại giao khéo léo?',
       options: [
         'Vương quốc Xiêm (Thái Lan)',
@@ -388,7 +388,7 @@ window.MINDMAP_DATA = {
     {
       id: 2,
       category: 'NHÁNH CHÍNH TRỊ',
-      branchColor: '#e05755',
+      branchColor: '#fda4af',
       question: 'Biểu hiện điển hình nhất của chính sách "Chia để trị" (Divide et Impera) mà thực dân Pháp áp dụng tại Việt Nam và thực dân Anh áp dụng tại Mã Lai là gì?',
       options: [
         'Xóa bỏ hoàn toàn mọi ranh giới hành chính và hợp nhất tất cả các dân tộc vào một chế độ pháp lý duy nhất.',
@@ -402,7 +402,7 @@ window.MINDMAP_DATA = {
     {
       id: 3,
       category: 'NHÁNH KINH TẾ',
-      branchColor: '#d97724',
+      branchColor: '#fcd34d',
       question: 'Vì sao nền kinh tế các nước Đông Nam Á dưới thời thuộc địa bị đánh giá là "què quặt và lệ thuộc nặng nề" vào chính quốc?',
       options: [
         'Vì chính quyền thực dân chỉ tập trung phát triển công nghiệp nặng (luyện kim, chế tạo máy) mà bỏ bê nông nghiệp.',
@@ -416,7 +416,7 @@ window.MINDMAP_DATA = {
     {
       id: 4,
       category: 'NHÁNH XÃ HỘI',
-      branchColor: '#2d8a5e',
+      branchColor: '#6ee7b7',
       question: 'Tác động tích cực mang tính khách quan về mặt xã hội từ cuộc khai thác thuộc địa của thực dân phương Tây ở Đông Nam Á là gì?',
       options: [
         'Xóa bỏ hoàn toàn khoảng cách giàu nghèo và nạn sưu cao thuế nặng ở nông thôn.',
@@ -430,7 +430,7 @@ window.MINDMAP_DATA = {
     {
       id: 5,
       category: 'NHÁNH VĂN HÓA - GIÁO DỤC',
-      branchColor: '#6d5bd0',
+      branchColor: '#c4b5fd',
       question: 'Bên cạnh chính sách ngu dân thâm độc (hạn chế mở trường học, đầu độc bằng rượu cồn và thuốc phiện), sự tiếp biến văn hóa thời thuộc địa đã mang lại hệ quả tích cực khách quan nào?',
       options: [
         'Khôi phục hoàn toàn hệ thống khoa cử Nho học và chữ viết tượng hình cổ truyền.',

@@ -143,10 +143,10 @@
       <h1 class="center-title">${c.title}</h1>
       <p class="center-subtitle">${c.subtitle}</p>
       <div class="center-quadrant-dots" title="4 Nhánh chính: Chính trị, Kinh tế, Xã hội, Văn hóa - Giáo dục">
-        <span style="background:#f28482"></span>
-        <span style="background:#f4a261"></span>
-        <span style="background:#52b788"></span>
-        <span style="background:#9d8df1"></span>
+        <span style="background:#fda4af"></span>
+        <span style="background:#fcd34d"></span>
+        <span style="background:#6ee7b7"></span>
+        <span style="background:#c4b5fd"></span>
       </div>
     `;
     centerEl.addEventListener('click', (e) => {
@@ -529,8 +529,8 @@
     // Branch Pill
     drawerBranchTag.textContent = `${branch.name}`;
     drawerBranchTag.style.background = branch.colorSoft;
-    drawerBranchTag.style.color = '#334155';
-    drawerBranchTag.style.border = `1.5px solid ${branch.color}`;
+    drawerBranchTag.style.color = branch.color;
+    drawerBranchTag.style.border = `1px solid ${branch.color}`;
 
     // Impact Badge
     const isNeg = item.impactType === 'negative';
@@ -626,17 +626,17 @@
 
       quizBody.innerHTML = `
         <div style="text-align:center; padding: 12px 0;">
-          <div style="width:72px;height:72px;border-radius:50%;margin:0 auto 14px;background:#f3e8ff;border:2px solid #a78bfa;display:flex;align-items:center;justify-content:center;color:#7c3aed;">
+          <div style="width:72px;height:72px;border-radius:50%;margin:0 auto 14px;background:rgba(196,181,253,0.16);border:2px solid #c4b5fd;display:flex;align-items:center;justify-content:center;color:#ddd6fe;">
             <i data-lucide="award" class="w-9 h-9"></i>
           </div>
-          <div style="font-family:var(--font-mono);font-size:12px;color:#7c3aed;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">
+          <div style="font-family:var(--font-mono);font-size:12px;color:#c4b5fd;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">
             KẾT QUẢ ÔN TẬP NHANH
           </div>
-          <h3 style="font-size:24px;font-weight:700;color:#334155;margin-bottom:8px;">
+          <h3 style="font-size:24px;font-weight:700;color:#f8fafc;margin-bottom:8px;">
             ${state.quizScore} / ${total} Câu Chính Xác (${percent}%)
           </h3>
-          <p style="font-weight:700;color:#6d28d9;margin-bottom:8px;">${badgeTitle}</p>
-          <p style="font-size:13.5px;color:#64748b;max-width:480px;margin:0 auto 18px;line-height:1.55;">
+          <p style="font-weight:700;color:#ddd6fe;margin-bottom:8px;">${badgeTitle}</p>
+          <p style="font-size:13.5px;color:#cbd5e1;max-width:480px;margin:0 auto 18px;line-height:1.55;">
             ${feedbackMsg}
           </p>
         </div>
@@ -692,7 +692,7 @@
       ${
         isAnswered
           ? `<div class="quiz-explanation">
-              <strong style="color:#6d28d9;display:block;margin-bottom:4px;">
+              <strong style="color:#c4b5fd;display:block;margin-bottom:4px;">
                 ${state.quizSelectedOption === q.correctIndex ? '✓ Chính xác!' : '✗ Chưa chính xác!'} Giải thích lịch sử:
               </strong>
               ${q.explanation}
