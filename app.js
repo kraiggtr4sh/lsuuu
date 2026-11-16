@@ -359,6 +359,11 @@
 
       leafEl.classList.toggle('collapsed-child', isCollapsed);
 
+      if (isCollapsed) {
+        leafEl.classList.remove('filter-dimmed', 'filter-highlighted');
+        return;
+      }
+
       if (state.activeFilter === 'all') {
         leafEl.classList.remove('filter-dimmed', 'filter-highlighted');
       } else if (state.activeFilter === impactType) {

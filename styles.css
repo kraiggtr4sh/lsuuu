@@ -689,9 +689,10 @@ html, body {
 }
 
 .leaf-node.collapsed-child {
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.85);
+  opacity: 0 !important;
+  visibility: hidden;
+  pointer-events: none !important;
+  transform: translate(-50%, -50%) scale(0.85) !important;
 }
 
 .leaf-node.filter-dimmed {
