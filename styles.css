@@ -1,0 +1,1324 @@
+/* ==========================================================================
+   HỆ QUẢ CHÍNH SÁCH THỰC DÂN Ở ĐÔNG NAM Á (THẾ KỶ XVI - XX)
+   Windows 11 Fluent Dark UI Style — Clean, Flat Surfaces, System UI Font
+   ========================================================================== */
+
+:root {
+  /* Windows 11 Dark Mode Surface Palette */
+  --bg-deep: #11161d;
+  --bg-mica: rgba(24, 30, 39, 0.92);
+  --bg-card: #1b222c;
+  --bg-card-hover: #222b38;
+  --bg-card-subtle: #161c24;
+  --bg-control: #262f3d;
+  --bg-control-hover: #303b4c;
+
+  /* Clean 1px Hairline Borders (Win11 Card Stroke) */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.15);
+  --border-focus: rgba(255, 255, 255, 0.24);
+
+  /* Typography Colors */
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --win-accent: #60cdff;
+
+  /* 4 Branch Solid Colors (No heavy glow) */
+  --color-pol: #ef4444;
+  --color-pol-soft: rgba(239, 68, 68, 0.12);
+
+  --color-eco: #eab308;
+  --color-eco-soft: rgba(234, 179, 8, 0.12);
+
+  --color-soc: #22c55e;
+  --color-soc-soft: rgba(34, 197, 94, 0.12);
+
+  --color-cul: #a855f7;
+  --color-cul-soft: rgba(168, 85, 247, 0.12);
+
+  /* Impact Tag Colors (Flat, Crisp) */
+  --impact-neg-bg: rgba(239, 68, 68, 0.12);
+  --impact-neg-border: rgba(239, 68, 68, 0.35);
+  --impact-neg-text: #fca5a5;
+
+  --impact-pos-bg: rgba(56, 189, 248, 0.12);
+  --impact-pos-border: rgba(56, 189, 248, 0.35);
+  --impact-pos-text: #7dd3fc;
+
+  /* Windows 11 System UI Font Stack */
+  --font-sans: 'Segoe UI Variable Display', 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: var(--font-sans);
+  --font-mono: 'Cascadia Code', 'Consolas', ui-monospace, monospace;
+
+  /* Win11 Elevation Shadows (Clean depth, no neon glow) */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.28), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-card-hover: 0 8px 20px rgba(0, 0, 0, 0.38), 0 2px 6px rgba(0, 0, 0, 0.24);
+  --shadow-flyout: 0 12px 32px rgba(0, 0, 0, 0.48), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+/* ==========================================================================
+   BACKGROUND DOT GRID (CLEAN, NO AMBIENT NEON BLOBS)
+   ========================================================================== */
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-deep);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+}
+
+.ambient-glow {
+  display: none !important;
+}
+
+/* ==========================================================================
+   TOP COMMAND BAR (WINDOWS 11 APP BAR STYLE)
+   ========================================================================== */
+.top-navbar {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 14px;
+  background: var(--bg-mica);
+  backdrop-filter: blur(20px) saturate(120%);
+  -webkit-backdrop-filter: blur(20px) saturate(120%);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: var(--bg-control);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--win-accent);
+  flex-shrink: 0;
+}
+
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-eyebrow {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.brand-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Windows 11 Segmented Filter Bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #141920;
+  padding: 3px;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+}
+
+.filter-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 0 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.filter-btn.active {
+  background: var(--bg-control);
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.filter-btn.active[data-filter="negative"] {
+  background: var(--impact-neg-bg);
+  border-color: var(--impact-neg-border);
+  color: var(--impact-neg-text);
+}
+
+.filter-btn.active[data-filter="positive"] {
+  background: var(--impact-pos-bg);
+  border-color: var(--impact-pos-border);
+  color: var(--impact-pos-text);
+}
+
+.filter-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.filter-dot.all {
+  background: #9ca3af;
+}
+.filter-dot.neg {
+  background: #ef4444;
+}
+.filter-dot.pos {
+  background: #38bdf8;
+}
+
+.filter-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+}
+
+/* Right Action Buttons (Win11 Standard Button) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-control);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.action-btn:hover {
+  background: var(--bg-control-hover);
+  border-color: var(--border-strong);
+}
+
+.action-btn:active {
+  transform: translateY(1px);
+}
+
+.action-btn.quiz-btn {
+  background: #0067c0;
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.action-btn.quiz-btn:hover {
+  background: #1874d0;
+}
+
+/* ==========================================================================
+   INTERACTIVE MIND MAP CANVAS (PAN & ZOOM)
+   ========================================================================== */
+.canvas-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: grab;
+  z-index: 1;
+}
+
+.canvas-viewport.dragging {
+  cursor: grabbing;
+}
+
+.canvas-world {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3200px;
+  height: 2200px;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+.connections-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3200px;
+  height: 2200px;
+  pointer-events: none;
+  z-index: 2;
+  overflow: visible;
+}
+
+.bezier-path {
+  fill: none;
+  stroke-linecap: round;
+  transition: opacity 0.25s ease, stroke-width 0.2s ease;
+}
+
+.bezier-path.primary-branch {
+  stroke-width: 2.5px;
+  opacity: 0.85;
+}
+
+.bezier-path.sub-branch {
+  stroke-width: 1.75px;
+  opacity: 0.65;
+}
+
+.bezier-path.animated-flow {
+  display: none;
+}
+
+.bezier-path.dimmed {
+  opacity: 0.12 !important;
+}
+
+.bezier-path.highlighted {
+  stroke-width: 2.75px;
+  opacity: 1 !important;
+}
+
+/* ==========================================================================
+   MIND MAP NODES (CLEAN WINDOWS 11 CARDS)
+   ========================================================================== */
+.nodes-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3200px;
+  height: 2200px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.mind-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  transition: opacity 0.25s ease,
+              transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease,
+              background-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+/* 1. CENTER NODE (Circular Hub, Clean Subtle Border) */
+.center-node {
+  width: 296px;
+  height: 296px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 0 0 6px rgba(255, 255, 255, 0.03),
+    var(--shadow-flyout);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 26px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.center-node:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.center-period-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--win-accent);
+  background: rgba(96, 205, 255, 0.1);
+  border: 1px solid rgba(96, 205, 255, 0.25);
+  padding: 3px 10px;
+  border-radius: 99px;
+  margin-bottom: 10px;
+}
+
+.center-title {
+  font-size: 16.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.center-subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  max-width: 235px;
+}
+
+.center-quadrant-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.center-quadrant-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: none !important;
+}
+
+/* 2. PRIMARY BRANCH NODES (4 MAIN PILLARS - WIN11 CARD) */
+.branch-node {
+  width: 268px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--branch-color, #64748b);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.branch-node:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-strong);
+  border-top-color: var(--branch-color);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.branch-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.branch-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: var(--branch-soft);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--branch-color);
+  flex-shrink: 0;
+}
+
+.branch-title-group {
+  flex: 1;
+}
+
+.branch-index {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  display: block;
+}
+
+.branch-name {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.branch-toggle-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  background: var(--bg-control);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, background 0.15s ease;
+}
+
+.branch-node:hover .branch-toggle-btn {
+  color: var(--text-primary);
+}
+
+.branch-node.collapsed .branch-toggle-btn {
+  transform: rotate(-90deg);
+  background: var(--branch-soft);
+  color: var(--branch-color);
+}
+
+.branch-summary {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+.branch-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.branch-pills {
+  display: flex;
+  gap: 4px;
+}
+
+.mini-pill {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10.5px;
+  font-weight: 500;
+}
+
+.mini-pill.neg {
+  background: var(--impact-neg-bg);
+  color: var(--impact-neg-text);
+}
+
+.mini-pill.pos {
+  background: var(--impact-pos-bg);
+  color: var(--impact-pos-text);
+}
+
+/* 3. SUB-BRANCH NODES (12 HISTORICAL LEAF CARDS - WIN11 SURFACE) */
+.leaf-node {
+  width: 324px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--branch-color, #ef4444);
+  box-shadow: var(--shadow-card);
+  padding: 12px 14px;
+  cursor: pointer;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leaf-node:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-strong);
+  border-left-color: var(--branch-color);
+  box-shadow: var(--shadow-card-hover);
+  z-index: 15;
+}
+
+.leaf-node.collapsed-child {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.85);
+}
+
+.leaf-node.filter-dimmed {
+  opacity: 0.22;
+  filter: grayscale(80%);
+}
+
+.leaf-node.filter-highlighted {
+  border-color: var(--branch-color);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.leaf-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.leaf-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.impact-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.impact-badge.negative {
+  background: var(--impact-neg-bg);
+  border: 1px solid var(--impact-neg-border);
+  color: var(--impact-neg-text);
+}
+
+.impact-badge.positive {
+  background: var(--impact-pos-bg);
+  border: 1px solid var(--impact-pos-border);
+  color: var(--impact-pos-text);
+}
+
+.leaf-body {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+/* Archival Historical Photo Frame inside Leaf Node */
+.archival-thumb-frame {
+  position: relative;
+  width: 92px;
+  height: 78px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #141414;
+  border: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.archival-thumb-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(65%) sepia(32%) contrast(1.06) brightness(0.92);
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.leaf-node:hover .archival-thumb-frame img {
+  transform: scale(1.05);
+  filter: grayscale(30%) sepia(20%) contrast(1.05) brightness(0.98);
+}
+
+.archival-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 4px;
+}
+
+.zoom-icon-pill {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: rgba(17, 22, 29, 0.85);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  border: 1px solid var(--border-subtle);
+}
+
+.leaf-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.48;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.leaf-caption-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.leaf-caption-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.leaf-more-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   BOTTOM TASKBAR HUD & CONTROLS (WIN11 FLOAT BAR)
+   ========================================================================== */
+.bottom-hud {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  z-index: 40;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.legend-panel {
+  pointer-events: auto;
+  background: var(--bg-mica);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-card);
+}
+
+.legend-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.legend-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
+}
+
+.legend-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  box-shadow: none !important;
+}
+
+.legend-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border-subtle);
+}
+
+.hint-text {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.canvas-controls {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-mica);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: var(--shadow-card);
+}
+
+.ctrl-btn {
+  height: 30px;
+  min-width: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.ctrl-btn:hover {
+  background: var(--bg-control);
+  border-color: var(--border-subtle);
+}
+
+.zoom-level-readout {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  min-width: 46px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   DETAIL DRAWER (WIN11 FLYOUT PANE)
+   ========================================================================== */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 60;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.detail-drawer {
+  position: fixed;
+  top: 12px;
+  bottom: 12px;
+  right: 12px;
+  width: min(540px, calc(100vw - 24px));
+  background: #181f29;
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  box-shadow: var(--shadow-flyout);
+  z-index: 70;
+  transform: translateX(calc(100% + 24px));
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.detail-drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: #141a23;
+}
+
+.drawer-branch-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.drawer-close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.drawer-close-btn:hover {
+  color: #ffffff;
+  background: #c42b1c;
+}
+
+.drawer-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.drawer-content::-webkit-scrollbar {
+  width: 6px;
+}
+.drawer-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 99px;
+}
+
+.drawer-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.drawer-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+/* Vintage Archival Photo Showcase Frame */
+.archival-showcase-card {
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.archival-photo-container {
+  position: relative;
+  width: 100%;
+  height: 245px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #0d1015;
+}
+
+.archival-photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(60%) sepia(32%) contrast(1.06) brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.archival-photo-container:hover img {
+  filter: grayscale(20%) sepia(15%) contrast(1.04) brightness(1);
+}
+
+.archival-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 32px rgba(0, 0, 0, 0.55);
+}
+
+.archival-stamp {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(17, 22, 29, 0.88);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.archival-caption {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.45;
+}
+
+/* Drawer Sections */
+.dossier-section {
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.dossier-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dossier-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.evidence-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.evidence-list li {
+  position: relative;
+  padding-left: 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.evidence-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--win-accent);
+}
+
+/* Two-Sided Dialectical Impact Evaluation Box */
+.dual-impact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.impact-eval-card {
+  border-radius: 6px;
+  padding: 12px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+}
+
+.impact-eval-card.neg-card {
+  border-left: 3px solid #ef4444;
+}
+
+.impact-eval-card.pos-card {
+  border-left: 3px solid #38bdf8;
+}
+
+.impact-eval-header {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.impact-eval-card.neg-card .impact-eval-header {
+  color: #fca5a5;
+}
+
+.impact-eval-card.pos-card .impact-eval-header {
+  color: #7dd3fc;
+}
+
+.impact-eval-body {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.drawer-footer-nav {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border-subtle);
+  background: #141a23;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
+   MINI QUIZ MODAL (WINDOWS 11 CONTENT DIALOG)
+   ========================================================================== */
+.quiz-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.quiz-modal-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.quiz-modal {
+  width: min(620px, 96vw);
+  max-height: 90vh;
+  background: #1b222c;
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  box-shadow: var(--shadow-flyout);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: scale(0.98);
+  transition: transform 0.2s ease;
+}
+
+.quiz-modal-backdrop.open .quiz-modal {
+  transform: scale(1);
+}
+
+.quiz-header {
+  padding: 14px 20px;
+  background: #141a23;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-header-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quiz-progress-bar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.06);
+  width: 100%;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: #0067c0;
+  transition: width 0.25s ease;
+}
+
+.quiz-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quiz-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.quiz-question-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quiz-option-btn {
+  text-align: left;
+  padding: 11px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card-subtle);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  line-height: 1.45;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.quiz-option-btn:hover:not(:disabled) {
+  border-color: var(--border-strong);
+  background: var(--bg-control);
+}
+
+.quiz-option-letter {
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  background: var(--bg-control);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.quiz-option-btn.correct {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.5);
+  color: #bbf7d0;
+}
+
+.quiz-option-btn.correct .quiz-option-letter {
+  background: #22c55e;
+  color: #052e16;
+  border-color: #22c55e;
+}
+
+.quiz-option-btn.wrong {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #fecaca;
+}
+
+.quiz-option-btn.wrong .quiz-option-letter {
+  background: #ef4444;
+  color: #450a0a;
+  border-color: #ef4444;
+}
+
+.quiz-explanation {
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--win-accent);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.quiz-footer {
+  padding: 14px 20px;
+  border-top: 1px solid var(--border-subtle);
+  background: #141a23;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+  .top-navbar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .filter-bar {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+  }
+  .hint-text {
+    display: none;
+  }
+  .dual-impact-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hệ Quả Chính Sách Thực Dân Ở Đông Nam Á (Thế kỷ XVI - XX) | Interactive Mind Map</title>
+
+  <!-- Tailwind CSS (CDN for utility classes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- ====================================================================
+         TOP NAVIGATION BAR & FILTER BAR
+         ==================================================================== -->
+    <header class="top-navbar" role="banner">
+      <!-- Brand / Topic Title -->
+      <div class="brand-section">
+        <div class="brand-badge" title="Bảng Nghiên Cứu Lịch Sử Tương Tác">
+          <i data-lucide="compass" class="w-5 h-5"></i>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-eyebrow">HỒ SƠ LỊCH SỬ ĐÔNG NAM Á • THẾ KỶ XVI – XX</span>
+          <span class="brand-title">Hệ Quả Chính Sách Thực Dân Phương Tây</span>
+        </div>
+      </div>
+
+      <!-- Interactive Filter Bar -->
+      <nav class="filter-bar" aria-label="Bộ lọc góc nhìn lịch sử">
+        <span class="filter-label">
+          <i data-lucide="filter" class="w-3.5 h-3.5"></i> Góc nhìn:
+        </span>
+        <button class="filter-btn active" data-filter="all" type="button">
+          <span class="filter-dot all"></span>
+          <span>Tất cả hệ quả</span>
+          <span class="filter-count">12</span>
+        </button>
+        <button class="filter-btn" data-filter="negative" type="button">
+          <span class="filter-dot neg"></span>
+          <span>Hệ quả tiêu cực (Chủ yếu)</span>
+          <span class="filter-count">8</span>
+        </button>
+        <button class="filter-btn" data-filter="positive" type="button">
+          <span class="filter-dot pos"></span>
+          <span>Tác động tích cực (Khách quan)</span>
+          <span class="filter-count">4</span>
+        </button>
+      </nav>
+
+      <!-- Action Buttons: Expand/Collapse & Mini Quiz Mode -->
+      <div class="nav-actions">
+        <button class="action-btn" id="toggleAllBranchesBtn" type="button" title="Đóng hoặc mở rộng tất cả 4 nhánh chính">
+          <i data-lucide="git-branch" class="w-4 h-4 text-slate-300"></i>
+          <span id="toggleAllBranchesText">Thu gọn nhánh</span>
+        </button>
+        <button class="action-btn quiz-btn" id="openQuizBtn" type="button">
+          <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+          <span>Ôn tập nhanh (5 câu)</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         RADIAL MIND MAP INTERACTIVE CANVAS (PAN & ZOOM)
+         ==================================================================== -->
+    <main class="canvas-viewport" id="canvasViewport" aria-label="Sơ đồ tư duy tương tác">
+      <div class="canvas-world" id="canvasWorld">
+        <!-- SVG Bezier Curves Layer -->
+        <svg class="connections-svg" id="connectionsSvg" viewBox="0 0 3200 2200" xmlns="http://www.w3.org/2000/svg"></svg>
+
+        <!-- HTML Interactive Nodes Layer -->
+        <div class="nodes-layer" id="nodesLayer"></div>
+      </div>
+    </main>
+
+    <!-- ====================================================================
+         BOTTOM HUD: QUADRANT LEGEND & PAN/ZOOM CONTROLS
+         ==================================================================== -->
+    <footer class="bottom-hud">
+      <!-- Quadrant Quick-Jump Legend -->
+      <div class="legend-panel">
+        <div class="legend-group">
+          <div class="legend-item" data-target-branch="branch-pol" title="Nhấp để di chuyển tới nhánh Chính trị">
+            <span class="legend-swatch" style="background:#ef4444;"></span>
+            <span>1. Chính trị</span>
+          </div>
+          <div class="legend-item" data-target-branch="branch-eco" title="Nhấp để di chuyển tới nhánh Kinh tế">
+            <span class="legend-swatch" style="background:#eab308;"></span>
+            <span>2. Kinh tế</span>
+          </div>
+          <div class="legend-item" data-target-branch="branch-soc" title="Nhấp để di chuyển tới nhánh Xã hội">
+            <span class="legend-swatch" style="background:#22c55e;"></span>
+            <span>3. Xã hội</span>
+          </div>
+          <div class="legend-item" data-target-branch="branch-cul" title="Nhấp để di chuyển tới nhánh Văn hóa - Giáo dục">
+            <span class="legend-swatch" style="background:#a855f7;"></span>
+            <span>4. Văn hóa - Giáo dục</span>
+          </div>
+        </div>
+
+        <div class="legend-divider"></div>
+
+        <div class="hint-text">
+          <i data-lucide="mouse-pointer-click" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Kéo để di chuyển • Cuộn chuột để Zoom • Nhấp vào thẻ để xem Hồ sơ tư liệu</span>
+        </div>
+      </div>
+
+      <!-- Canvas Zoom & Reset View Controls -->
+      <div class="canvas-controls">
+        <button class="ctrl-btn" id="zoomOutBtn" type="button" title="Thu nhỏ (Zoom Out)">
+          <i data-lucide="minus" class="w-4 h-4"></i>
+        </button>
+        <span class="zoom-level-readout" id="zoomReadout">72%</span>
+        <button class="ctrl-btn" id="zoomInBtn" type="button" title="Phóng to (Zoom In)">
+          <i data-lucide="plus" class="w-4 h-4"></i>
+        </button>
+        <div class="legend-divider" style="margin: 0 2px;"></div>
+        <button class="ctrl-btn" id="resetViewBtn" type="button" title="Đặt lại góc nhìn toàn cảnh (Reset View)">
+          <i data-lucide="locate-fixed" class="w-4 h-4 text-amber-400"></i>
+          <span>Đặt lại góc nhìn</span>
+        </button>
+      </div>
+    </footer>
+
+    <!-- ====================================================================
+         DETAIL DRAWER (SLIDE-OUT HISTORICAL ARCHIVE DOSSIER)
+         ==================================================================== -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="detail-drawer" id="detailDrawer" aria-label="Cửa sổ chi tiết dẫn chứng lịch sử">
+      <div class="drawer-topbar">
+        <div class="flex items-center gap-2.5">
+          <span class="drawer-branch-tag" id="drawerBranchTag">CHÍNH TRỊ</span>
+          <span class="impact-badge negative" id="drawerImpactBadge">Tiêu cực chủ yếu</span>
+        </div>
+        <button class="drawer-close-btn" id="drawerCloseBtn" type="button" title="Đóng cửa sổ (Esc)">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="drawer-content">
+        <div class="drawer-title-block">
+          <h2 class="drawer-title" id="drawerTitle">Mất độc lập, chủ quyền</h2>
+        </div>
+
+        <!-- Enlarged Vintage Archival Photo Showcase -->
+        <div class="archival-showcase-card">
+          <div class="archival-photo-container">
+            <img id="drawerPhoto" src="" alt="Tư liệu lịch sử" />
+            <div class="archival-vignette"></div>
+            <span class="archival-stamp" id="drawerStamp">HỒ SƠ LƯU TRỮ</span>
+          </div>
+          <p class="archival-caption" id="drawerCaption"></p>
+        </div>
+
+        <!-- Deep Historical Analysis -->
+        <section class="dossier-section">
+          <h3 class="dossier-section-title">
+            <i data-lucide="scroll-text" class="w-4 h-4"></i>
+            Phân tích chuyên sâu bối cảnh lịch sử
+          </h3>
+          <p class="dossier-text" id="drawerDeepAnalysis"></p>
+        </section>
+
+        <!-- Concrete Historical Evidence -->
+        <section class="dossier-section">
+          <h3 class="dossier-section-title">
+            <i data-lucide="file-check-2" class="w-4 h-4"></i>
+            Dẫn chứng lịch sử tiêu biểu ở Đông Nam Á
+          </h3>
+          <ul class="evidence-list" id="drawerEvidenceList"></ul>
+        </section>
+
+        <!-- Dialectical Two-Sided Impact Assessment -->
+        <section class="dossier-section">
+          <h3 class="dossier-section-title">
+            <i data-lucide="scale" class="w-4 h-4"></i>
+            Đánh giá tác động hai mặt (Biện chứng lịch sử)
+          </h3>
+          <div class="dual-impact-grid">
+            <div class="impact-eval-card neg-card">
+              <div class="impact-eval-header">
+                <i data-lucide="alert-octagon" class="w-4 h-4"></i>
+                Hệ quả tiêu cực (Chủ đạo)
+              </div>
+              <p class="impact-eval-body" id="drawerNegEval"></p>
+            </div>
+            <div class="impact-eval-card pos-card">
+              <div class="impact-eval-header">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                Tác động khách quan / Chuyển hóa
+              </div>
+              <p class="impact-eval-body" id="drawerPosEval"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="drawer-footer-nav">
+        <button class="action-btn" id="prevLeafBtn" type="button">
+          <i data-lucide="chevron-left" class="w-4 h-4"></i>
+          <span>Mục trước</span>
+        </button>
+        <span class="text-xs text-slate-400 font-mono">Dùng phím ← / → để chuyển mục</span>
+        <button class="action-btn" id="nextLeafBtn" type="button">
+          <span>Mục tiếp theo</span>
+          <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ====================================================================
+         MINI QUIZ MODAL (CHẾ ĐỘ ÔN TẬP NHANH 5 CÂU HỎI)
+         ==================================================================== -->
+    <div class="quiz-modal-backdrop" id="quizModalBackdrop" role="dialog" aria-modal="true">
+      <div class="quiz-modal">
+        <div class="quiz-header">
+          <div class="quiz-header-title">
+            <i data-lucide="brain-circuit" class="w-5 h-5 text-amber-400"></i>
+            <span>Chế Độ Ôn Tập Nhanh • Hệ Quả Chính Sách Thực Dân</span>
+          </div>
+          <button class="drawer-close-btn" id="quizCloseBtn" type="button" title="Đóng (Esc)">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgressFill" style="width: 20%;"></div>
+        </div>
+
+        <div class="quiz-body" id="quizBody"></div>
+
+        <div class="quiz-footer" id="quizFooter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
