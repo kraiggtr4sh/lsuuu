@@ -796,6 +796,26 @@
       if (e.target === quizModalBackdrop) closeQuizModal();
     });
 
+    // Team 4 Credits Modal Controls
+    const teamModalBackdrop = document.getElementById('teamModalBackdrop');
+    const openTeamBtn = document.getElementById('openTeamBtn');
+    const teamCloseBtn = document.getElementById('teamCloseBtn');
+    const teamDoneBtn = document.getElementById('teamDoneBtn');
+    function openTeamModal() {
+      if (teamModalBackdrop) teamModalBackdrop.classList.add('open');
+    }
+    function closeTeamModal() {
+      if (teamModalBackdrop) teamModalBackdrop.classList.remove('open');
+    }
+    if (openTeamBtn) openTeamBtn.addEventListener('click', openTeamModal);
+    if (teamCloseBtn) teamCloseBtn.addEventListener('click', closeTeamModal);
+    if (teamDoneBtn) teamDoneBtn.addEventListener('click', closeTeamModal);
+    if (teamModalBackdrop) {
+      teamModalBackdrop.addEventListener('click', (e) => {
+        if (e.target === teamModalBackdrop) closeTeamModal();
+      });
+    }
+
     // Mobile Rotate Overlay Dismiss Button
     const dismissRotateBtn = document.getElementById('dismissRotateBtn');
     const rotateOverlay = document.getElementById('rotateDeviceOverlay');
@@ -808,7 +828,8 @@
     // Keyboard Shortcuts (ESC to close drawer/modal, Left/Right arrows in drawer)
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        if (state.quizOpen) closeQuizModal();
+        if (teamModalBackdrop && teamModalBackdrop.classList.contains('open')) closeTeamModal();
+        else if (state.quizOpen) closeQuizModal();
         else if (state.activeLeafId) closeDetailDrawer();
       } else if (state.activeLeafId && !state.quizOpen) {
         if (e.key === 'ArrowLeft') navigateDrawerLeaf(-1);

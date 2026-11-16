@@ -12,7 +12,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=20261116-6" />
+  <link rel="stylesheet" href="styles.css?v=20261116-7" />
 </head>
 <body>
   <div class="app-container">
@@ -72,10 +72,14 @@
         </button>
       </nav>
 
-      <!-- Action Buttons: Expand/Collapse & Mini Quiz Mode -->
+      <!-- Action Buttons: Team Credits, Expand/Collapse & Mini Quiz Mode -->
       <div class="nav-actions">
+        <button class="action-btn team-btn" id="openTeamBtn" type="button" title="Xem danh sách thành viên Tổ 4 thực hiện">
+          <i data-lucide="users" class="w-4 h-4"></i>
+          <span>Tổ 4 thực hiện</span>
+        </button>
         <button class="action-btn" id="toggleAllBranchesBtn" type="button" title="Đóng hoặc mở rộng tất cả 4 nhánh chính">
-          <i data-lucide="git-branch" class="w-4 h-4 text-slate-300"></i>
+          <i data-lucide="git-branch" class="w-4 h-4"></i>
           <span id="toggleAllBranchesText">Thu gọn nhánh</span>
         </button>
         <button class="action-btn quiz-btn" id="openQuizBtn" type="button">
@@ -126,8 +130,8 @@
         <div class="legend-divider"></div>
 
         <div class="hint-text">
-          <i data-lucide="mouse-pointer-click" class="w-3.5 h-3.5 text-violet-500"></i>
-          <span>Kéo để di chuyển • Cuộn chuột để Zoom • Nhấp vào thẻ để xem Hồ sơ tư liệu</span>
+          <i data-lucide="award" class="w-3.5 h-3.5" style="color:#7c382e;"></i>
+          <span>Thực hiện bởi <strong>Tổ 4</strong> • Kéo để di chuyển • Cuộn chuột để Zoom</span>
         </div>
       </div>
 
@@ -258,10 +262,67 @@
         <div class="quiz-footer" id="quizFooter"></div>
       </div>
     </div>
+
+    <!-- ====================================================================
+         TEAM 4 CREDITS MODAL (THÔNG TIN THÀNH VIÊN TỔ 4)
+         ==================================================================== -->
+    <div class="quiz-modal-backdrop" id="teamModalBackdrop" role="dialog" aria-modal="true">
+      <div class="quiz-modal team-modal">
+        <div class="quiz-header">
+          <div class="quiz-header-title">
+            <i data-lucide="users" class="w-5 h-5" style="color:#7c382e;"></i>
+            <span>Thông Tin Nhóm Thực Hiện • Tổ 4</span>
+          </div>
+          <button class="drawer-close-btn" id="teamCloseBtn" type="button" title="Đóng (Esc)">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <div class="quiz-body">
+          <p class="team-intro-text">
+            Dự án Sơ đồ tư duy tương tác <strong>"Hệ Quả Chính Sách Thực Dân Ở Đông Nam Á (Thế kỷ XVI – XX)"</strong> được thực hiện bởi <strong>Tổ 4</strong> gồm các thành viên:
+          </p>
+          <div class="team-members-grid">
+            <div class="team-member-card">
+              <span class="member-number">01</span>
+              <span class="member-name">Lâm Nguyên Anh</span>
+            </div>
+            <div class="team-member-card">
+              <span class="member-number">02</span>
+              <span class="member-name">Hoàng Nam Sơn</span>
+            </div>
+            <div class="team-member-card">
+              <span class="member-number">03</span>
+              <span class="member-name">Đặng Tuấn Khải</span>
+            </div>
+            <div class="team-member-card">
+              <span class="member-number">04</span>
+              <span class="member-name">Trương Minh Cát Tín</span>
+            </div>
+            <div class="team-member-card">
+              <span class="member-number">05</span>
+              <span class="member-name">Nguyễn Đức Tấn Minh</span>
+            </div>
+            <div class="team-member-card">
+              <span class="member-number">06</span>
+              <span class="member-name">Nguyễn Gia Khang</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-footer">
+          <span style="font-size:12px;color:var(--text-secondary);">Bài thuyết trình & Nghiên cứu Lịch sử • Tổ 4</span>
+          <button class="action-btn quiz-btn" id="teamDoneBtn" type="button">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Đóng</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Application Scripts -->
-  <script src="data.js?v=20261116-6"></script>
-  <script src="app.js?v=20261116-6"></script>
+  <script src="data.js?v=20261116-7"></script>
+  <script src="app.js?v=20261116-7"></script>
 </body>
 </html>
