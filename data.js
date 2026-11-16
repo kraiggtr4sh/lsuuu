@@ -15,16 +15,16 @@ window.MINDMAP_DATA = {
 
   branches: [
     /* ======================================================================
-       1. NHÁNH CHÍNH TRỊ (Góc trên bên trái - Màu đỏ san hô #ef4444)
+       1. NHÁNH CHÍNH TRỊ (Xanh xám cổ điển #5c7a8b)
        ====================================================================== */
     {
       id: 'branch-pol',
       index: 'NHÁNH 01',
-      name: 'CHÍNH TRỊ',
+      name: '1. Chính trị',
       quadrant: 'top-left',
-      color: '#fda4af',
-      colorSoft: 'rgba(253, 164, 175, 0.16)',
-      colorGlow: 'rgba(253, 164, 175, 0.25)',
+      color: '#5c7a8b',
+      colorSoft: '#dce5ea',
+      colorGlow: 'rgba(92, 122, 139, 0.25)',
       icon: 'landmark',
       summary: 'Xóa bỏ chủ quyền độc lập bản địa, thiết lập ách cai trị chia để trị và du nhập mô hình hành chính thực dân.',
       x: 1090,
@@ -37,7 +37,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Các quốc gia Đông Nam Á biến thành thuộc địa hoặc nửa thuộc địa, ngoại trừ Xiêm giữ được độc lập về danh nghĩa nhờ cải cách và ngoại giao khéo léo.',
-          caption: 'Ảnh minh họa: Lễ ký kết hiệp ước thực dân',
+          caption: 'Tư liệu thật: Trang cuối Hiệp ước Patenôtre (6/6/1884) với chữ ký của đại diện Pháp và triều đình Huế | Nguồn: Wikimedia Commons (Public Domain)',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:B%E1%BA%A3n_sao_Trang_cu%E1%BB%91i_c%E1%BB%A7a_Hi%E1%BB%87p_%C6%B0%E1%BB%9Bc_Paten%C3%B4tre_(6-6-1884)_c%C3%B3_ch%E1%BB%AF_k%C3%BD_c%E1%BB%A7a_Paten%C3%B4tre_-_%C4%91%E1%BA%A1i_di%E1%BB%87n_n%C6%B0%E1%BB%9Bc_Ph%C3%A1p_v%C3%A0_c%C3%A1c_quan_%C4%91%E1%BA%A1i_th%E1%BA%A7n_%C4%90%E1%BA%A1i_Nam_Nguy%E1%BB%85n_V%C4%83n_T%C6%B0%E1%BB%9Dng,_Ph%E1%BA%A1m_Th%E1%BA%ADn_Du%E1%BA%ADt_v%C3%A0_T%C3%B4n_Th%E1%BA%A5t_Phan.jpg',
           imageUrl: 'assets/images/pol-1.png',
           x: 520,
           y: 350,
@@ -60,7 +61,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Pháp chia Việt Nam thành 3 kỳ (Bắc Kỳ, Trung Kỳ, Nam Kỳ); Anh chia rẽ sắc tộc ở Mã Lai, để lại mâu thuẫn kéo dài.',
-          caption: 'Ảnh minh họa: Bản đồ phân chia lãnh thổ và quân đội thực dân',
+          caption: 'Tư liệu thật: Bản đồ phân chia hành chính Liên bang Đông Dương thuộc Pháp (Bắc Kỳ, Trung Kỳ, Nam Kỳ, Lào, Campuchia) | Nguồn: Wikimedia Commons',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:French_Indochina_subdivisions.svg',
           imageUrl: 'assets/images/pol-2.png',
           x: 460,
           y: 660,
@@ -83,7 +85,8 @@ window.MINDMAP_DATA = {
           impactType: 'positive',
           impactLabel: 'Tích cực khách quan',
           shortDesc: 'Từng bước áp dụng hệ thống luật pháp và tổ chức hành chính phương Tây hiện đại thay thế mô hình quân chủ chuyên chế phong kiến.',
-          caption: 'Ảnh minh họa: Tòa án / công sở thời thuộc địa',
+          caption: 'Tư liệu thật: Tòa Đại hình / Pháp viện (Palais de Justice) tại Hà Nội thời thuộc địa đầu thế kỷ XX | Nguồn: Wikimedia Commons (Public Domain)',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hano%C3%AF_-_Palais_de_Justice_et_Prisons.jpg',
           imageUrl: 'assets/images/pol-3.png',
           x: 520,
           y: 960,
@@ -103,16 +106,16 @@ window.MINDMAP_DATA = {
     },
 
     /* ======================================================================
-       2. NHÁNH KINH TẾ (Góc trên bên phải - Màu vàng hổ phách #eab308)
+       2. NHÁNH KINH TẾ (Vàng đất cổ điển #c4924c)
        ====================================================================== */
     {
       id: 'branch-eco',
       index: 'NHÁNH 02',
-      name: 'KINH TẾ',
+      name: '2. Kinh tế',
       quadrant: 'top-right',
-      color: '#fcd34d',
-      colorSoft: 'rgba(252, 211, 77, 0.16)',
-      colorGlow: 'rgba(252, 211, 77, 0.25)',
+      color: '#c4924c',
+      colorSoft: '#f2e4ce',
+      colorGlow: 'rgba(196, 146, 76, 0.25)',
       icon: 'coins',
       summary: 'Vơ vét cạn kiệt tài nguyên thiên nhiên, cột chặt kinh tế thuộc địa vào chính quốc nhưng đồng thời tạo dựng hạ tầng hiện đại.',
       x: 2110,
@@ -125,7 +128,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Lập đồn điền cao su quy mô lớn (Đông Dương, Indonesia), khai thác kiệt quệ thiếc và than đá (Mã Lai, Việt Nam).',
-          caption: 'Ảnh minh họa: Công nhân cạo mủ cao su thời thuộc địa',
+          caption: 'Tư liệu thật: Công nhân bản địa cạo mủ cao su tại đồn điền Buitenzorg (Đông Ấn Hà Lan / Indonesia) | Nguồn: Tropenmuseum / Wikimedia Commons',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Rubber_tappen_Buitenzorg_TMnr_60033684.jpg',
           imageUrl: 'assets/images/eco-1.png',
           x: 2680,
           y: 350,
@@ -148,7 +152,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Kìm hãm công nghiệp nặng phát triển, biến các nước bản địa thành nơi cung cấp nguyên liệu thô và thị trường tiêu thụ độc chiếm của chính quốc.',
-          caption: 'Ảnh minh họa: Bến cảng bốc dỡ hàng hóa xuất khẩu',
+          caption: 'Tư liệu thật: Tàu buôn và hoạt động bốc dỡ hàng hóa xuất khẩu tại Thương cảng Sài Gòn (Port de Saïgon) | Nguồn: Wikimedia Commons',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Port_de_Saigon_05438.jpg',
           imageUrl: 'assets/images/eco-2.png',
           x: 2740,
           y: 660,
@@ -171,7 +176,8 @@ window.MINDMAP_DATA = {
           impactType: 'positive',
           impactLabel: 'Tích cực khách quan',
           shortDesc: 'Xây dựng hệ thống đường sắt (như tuyến Sài Gòn - Mỹ Tho), cảng biển và đô thị thương mại lớn (Singapore, Batavia, Sài Gòn).',
-          caption: 'Ảnh minh họa: Tàu hỏa hơi nước và nhà ga cổ',
+          caption: 'Tư liệu thật: Cầu đường sắt Paul Doumer (cầu Long Biên) bắc qua sông Hồng tại Hà Nội đầu thế kỷ XX | Nguồn: Wikimedia Commons (Public Domain)',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hano%C3%AF_-_Pont_sur_le_Fleuve_Rouge.jpg',
           imageUrl: 'assets/images/eco-3.png',
           x: 2680,
           y: 960,
@@ -191,16 +197,16 @@ window.MINDMAP_DATA = {
     },
 
     /* ======================================================================
-       3. NHÁNH XÃ HỘI (Góc dưới bên trái - Màu xanh ngọc lục bảo #22c55e)
+       3. NHÁNH XÃ HỘI (Xanh rêu cổ điển #577861)
        ====================================================================== */
     {
       id: 'branch-soc',
       index: 'NHÁNH 03',
-      name: 'XÃ HỘI',
+      name: '3. Xã hội',
       quadrant: 'bottom-left',
-      color: '#6ee7b7',
-      colorSoft: 'rgba(110, 231, 183, 0.16)',
-      colorGlow: 'rgba(110, 231, 183, 0.25)',
+      color: '#577861',
+      colorSoft: '#d9e5dc',
+      colorGlow: 'rgba(87, 120, 97, 0.25)',
       icon: 'users',
       summary: 'Đẩy đại đa số nông dân vào cảnh bần cùng, làm phân hóa giai cấp truyền thống và làm nảy sinh những lực lượng cách mạng mới.',
       x: 1090,
@@ -213,7 +219,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Cướp đoạt ruộng đất lập đồn điền, áp đặt sưu cao thuế nặng (thuế thân, thuế muối, thuế rượu...), đẩy nông dân vào cảnh bần cùng.',
-          caption: 'Ảnh minh họa: Nông dân lao động khổ cực trên đồng ruộng',
+          caption: 'Tư liệu thật: Nông dân Bắc Kỳ (Tonkin) lao động cấy lúa dưới thời thuộc địa | Nguồn: Kho lưu trữ Pháp / Wikimedia Commons (Public Domain)',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Le_repiquage_du_riz_pour_la_r%C3%A9colte_de_juin_-_A7654.jpg',
           imageUrl: 'assets/images/soc-1.png',
           x: 520,
           y: 1240,
@@ -236,7 +243,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Giai cấp địa chủ phong kiến bị phân hóa (một bộ phận làm tay sai, một bộ phận yêu nước), các tầng lớp cũ bị chèn ép.',
-          caption: 'Ảnh minh họa: Tầng lớp địa chủ phong kiến xưa',
+          caption: 'Tư liệu thật: Quan Tổng đốc Hà Nội và các quan lại đại thần triều Nguyễn thời Pháp thuộc | Nguồn: Wikimedia Commons (Public Domain)',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Le_Tong-Doc_d%27Hano%C3%8E_entre_deux_hauts_mandarins_annamites.jpg',
           imageUrl: 'assets/images/soc-2.png',
           x: 460,
           y: 1540,
@@ -259,7 +267,8 @@ window.MINDMAP_DATA = {
           impactType: 'positive',
           impactLabel: 'Tích cực khách quan',
           shortDesc: 'Xuất hiện giai cấp công nhân, tư sản dân tộc và tiểu tư sản trí thức — lực lượng nòng cốt lãnh đạo phong trào đấu tranh giải phóng dân tộc.',
-          caption: 'Ảnh minh họa: Tập thể công nhân và trí thức đầu thế kỷ XX',
+          caption: 'Tư liệu thật: Trường Y bản xứ STOVIA tại Batavia (Jakarta) — cái nôi đào tạo tầng lớp trí thức và phong trào thức tỉnh dân tộc Indonesia | Nguồn: Wikimedia Commons',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_De_Geneeskundige_Hogeschool_in_Batavia_TMnr_60038172.jpg',
           imageUrl: 'assets/images/soc-3.png',
           x: 520,
           y: 1850,
@@ -279,16 +288,16 @@ window.MINDMAP_DATA = {
     },
 
     /* ======================================================================
-       4. NHÁNH VĂN HÓA - GIÁO DỤC (Góc dưới bên phải - Màu tím violet #a855f7)
+       4. NHÁNH VĂN HÓA - GIÁO DỤC (Tím trầm cổ điển #7b668c)
        ====================================================================== */
     {
       id: 'branch-cul',
       index: 'NHÁNH 04',
-      name: 'VĂN HÓA - GIÁO DỤC',
+      name: '4. Văn hóa – Giáo dục',
       quadrant: 'bottom-right',
-      color: '#c4b5fd',
-      colorSoft: 'rgba(196, 181, 253, 0.16)',
-      colorGlow: 'rgba(196, 181, 253, 0.25)',
+      color: '#7b668c',
+      colorSoft: '#e4dceb',
+      colorGlow: 'rgba(123, 102, 140, 0.25)',
       icon: 'book-open',
       summary: 'Thực thi chính sách ngu dân và văn hóa nô dịch, song vô tình mở đường cho sự tiếp biến văn hóa và luồng tư tưởng tiến bộ.',
       x: 2110,
@@ -301,7 +310,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Hạn chế mở trường học để duy trì tỷ lệ mù chữ cao, đầu độc người dân bằng rượu cồn và thuốc phiện.',
-          caption: 'Ảnh minh họa: Tiệm hút thuốc phiện thời thuộc địa',
+          caption: 'Tư liệu thật: Người dân bản địa trong một tiệm hút thuốc phiện (Fumerie d\'opium) thời thuộc địa Đông Dương | Nguồn: Wikimedia Commons (Public Domain)',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Un_fumeur_allong%C3%A9_dans_une_fumerie_d%27opium_-_A5237.jpg',
           imageUrl: 'assets/images/cul-1.png',
           x: 2680,
           y: 1240,
@@ -324,7 +334,8 @@ window.MINDMAP_DATA = {
           impactType: 'negative',
           impactLabel: 'Tiêu cực chủ yếu',
           shortDesc: 'Làm suy yếu các giá trị văn hóa bản địa, áp đặt văn hóa phương Tây một cách cưỡng ép.',
-          caption: 'Ảnh minh họa: Kiến trúc phương Tây xen lẫn không gian truyền thống',
+          caption: 'Tư liệu thật: Nhà thờ Lớn Hà Nội (Cathédrale Saint-Joseph) xây dựng trên nền chùa Báo Thiên cổ thời Pháp thuộc | Nguồn: Wikimedia Commons',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hano%C3%AF_-_Cath%C3%A9drale,_sortie_de_la_Messe.jpg',
           imageUrl: 'assets/images/cul-2.png',
           x: 2740,
           y: 1540,
@@ -347,7 +358,8 @@ window.MINDMAP_DATA = {
           impactType: 'positive',
           impactLabel: 'Tích cực khách quan',
           shortDesc: 'Du nhập chữ viết mới (chữ Quốc ngữ), báo chí, khoa học kỹ thuật và các trào lưu tư tưởng dân chủ, cách mạng tiến bộ.',
-          caption: 'Ảnh minh họa: Trang báo chí chữ Quốc ngữ đầu thế kỷ XX',
+          caption: 'Tư liệu thật: Tờ Gia Định Báo (phát hành năm 1865 tại Sài Gòn) — tờ báo bằng chữ Quốc ngữ đầu tiên ở Việt Nam | Nguồn: Wikimedia Commons (Public Domain)',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Gia_Dinh_Bao.jpg',
           imageUrl: 'assets/images/cul-3.png',
           x: 2680,
           y: 1850,
@@ -373,8 +385,8 @@ window.MINDMAP_DATA = {
   quizQuestions: [
     {
       id: 1,
-      category: 'NHÁNH CHÍNH TRỊ',
-      branchColor: '#fda4af',
+      category: '1. CHÍNH TRỊ',
+      branchColor: '#5c7a8b',
       question: 'Trong bối cảnh hầu hết các nước Đông Nam Á đều biến thành thuộc địa hoặc nửa thuộc địa của phương Tây (thế kỷ XVI - XX), quốc gia nào duy nhất giữ được độc lập về danh nghĩa nhờ cải cách và ngoại giao khéo léo?',
       options: [
         'Vương quốc Xiêm (Thái Lan)',
@@ -387,8 +399,8 @@ window.MINDMAP_DATA = {
     },
     {
       id: 2,
-      category: 'NHÁNH CHÍNH TRỊ',
-      branchColor: '#fda4af',
+      category: '1. CHÍNH TRỊ',
+      branchColor: '#5c7a8b',
       question: 'Biểu hiện điển hình nhất của chính sách "Chia để trị" (Divide et Impera) mà thực dân Pháp áp dụng tại Việt Nam và thực dân Anh áp dụng tại Mã Lai là gì?',
       options: [
         'Xóa bỏ hoàn toàn mọi ranh giới hành chính và hợp nhất tất cả các dân tộc vào một chế độ pháp lý duy nhất.',
@@ -401,8 +413,8 @@ window.MINDMAP_DATA = {
     },
     {
       id: 3,
-      category: 'NHÁNH KINH TẾ',
-      branchColor: '#fcd34d',
+      category: '2. KINH TẾ',
+      branchColor: '#c4924c',
       question: 'Vì sao nền kinh tế các nước Đông Nam Á dưới thời thuộc địa bị đánh giá là "què quặt và lệ thuộc nặng nề" vào chính quốc?',
       options: [
         'Vì chính quyền thực dân chỉ tập trung phát triển công nghiệp nặng (luyện kim, chế tạo máy) mà bỏ bê nông nghiệp.',
@@ -415,8 +427,8 @@ window.MINDMAP_DATA = {
     },
     {
       id: 4,
-      category: 'NHÁNH XÃ HỘI',
-      branchColor: '#6ee7b7',
+      category: '3. XÃ HỘI',
+      branchColor: '#577861',
       question: 'Tác động tích cực mang tính khách quan về mặt xã hội từ cuộc khai thác thuộc địa của thực dân phương Tây ở Đông Nam Á là gì?',
       options: [
         'Xóa bỏ hoàn toàn khoảng cách giàu nghèo và nạn sưu cao thuế nặng ở nông thôn.',
@@ -429,8 +441,8 @@ window.MINDMAP_DATA = {
     },
     {
       id: 5,
-      category: 'NHÁNH VĂN HÓA - GIÁO DỤC',
-      branchColor: '#c4b5fd',
+      category: '4. VĂN HÓA - GIÁO DỤC',
+      branchColor: '#7b668c',
       question: 'Bên cạnh chính sách ngu dân thâm độc (hạn chế mở trường học, đầu độc bằng rượu cồn và thuốc phiện), sự tiếp biến văn hóa thời thuộc địa đã mang lại hệ quả tích cực khách quan nào?',
       options: [
         'Khôi phục hoàn toàn hệ thống khoa cử Nho học và chữ viết tượng hình cổ truyền.',

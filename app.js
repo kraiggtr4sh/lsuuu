@@ -143,10 +143,10 @@
       <h1 class="center-title">${c.title}</h1>
       <p class="center-subtitle">${c.subtitle}</p>
       <div class="center-quadrant-dots" title="4 Nhánh chính: Chính trị, Kinh tế, Xã hội, Văn hóa - Giáo dục">
-        <span style="background:#fda4af"></span>
-        <span style="background:#fcd34d"></span>
-        <span style="background:#6ee7b7"></span>
-        <span style="background:#c4b5fd"></span>
+        <span style="background:#5c7a8b"></span>
+        <span style="background:#c4924c"></span>
+        <span style="background:#577861"></span>
+        <span style="background:#7b668c"></span>
       </div>
     `;
     centerEl.addEventListener('click', (e) => {
@@ -528,9 +528,9 @@
 
     // Branch Pill
     drawerBranchTag.textContent = `${branch.name}`;
-    drawerBranchTag.style.background = branch.colorSoft;
-    drawerBranchTag.style.color = branch.color;
-    drawerBranchTag.style.border = `1px solid ${branch.color}`;
+    drawerBranchTag.style.background = branch.color;
+    drawerBranchTag.style.color = '#ffffff';
+    drawerBranchTag.style.border = `1px solid rgba(0,0,0,0.2)`;
 
     // Impact Badge
     const isNeg = item.impactType === 'negative';
@@ -551,7 +551,10 @@
     drawerPhoto.src = item.imageUrl;
     drawerPhoto.alt = item.caption;
     drawerStamp.textContent = item.archiveCode;
-    drawerCaption.innerHTML = `<i data-lucide="camera" class="w-4 h-4 shrink-0 mt-0.5 text-violet-500"></i> <span>${item.caption}</span>`;
+    const sourceLinkHtml = item.sourceUrl
+      ? `<div style="margin-top:6px;"><a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" style="color:#7c382e;text-decoration:underline;font-weight:700;font-size:11.5px;">Xem hồ sơ tại kho lưu trữ gốc ↗</a></div>`
+      : '';
+    drawerCaption.innerHTML = `<i data-lucide="camera" class="w-4 h-4 shrink-0 mt-0.5" style="color:#7c382e"></i> <div><span>${item.caption}</span>${sourceLinkHtml}</div>`;
 
     // Deep Analysis
     drawerDeepAnalysis.textContent = item.deepAnalysis;
@@ -626,17 +629,17 @@
 
       quizBody.innerHTML = `
         <div style="text-align:center; padding: 12px 0;">
-          <div style="width:72px;height:72px;border-radius:50%;margin:0 auto 14px;background:rgba(196,181,253,0.16);border:2px solid #c4b5fd;display:flex;align-items:center;justify-content:center;color:#ddd6fe;">
+          <div style="width:72px;height:72px;border-radius:50%;margin:0 auto 14px;background:#f2e4ce;border:2px solid #7c382e;display:flex;align-items:center;justify-content:center;color:#7c382e;">
             <i data-lucide="award" class="w-9 h-9"></i>
           </div>
-          <div style="font-family:var(--font-mono);font-size:12px;color:#c4b5fd;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">
+          <div style="font-family:var(--font-mono);font-size:12px;color:#7c382e;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">
             KẾT QUẢ ÔN TẬP NHANH
           </div>
-          <h3 style="font-size:24px;font-weight:700;color:#f8fafc;margin-bottom:8px;">
+          <h3 style="font-family:var(--font-serif);font-size:24px;font-weight:700;color:#2b2118;margin-bottom:8px;">
             ${state.quizScore} / ${total} Câu Chính Xác (${percent}%)
           </h3>
-          <p style="font-weight:700;color:#ddd6fe;margin-bottom:8px;">${badgeTitle}</p>
-          <p style="font-size:13.5px;color:#cbd5e1;max-width:480px;margin:0 auto 18px;line-height:1.55;">
+          <p style="font-weight:700;color:#7c382e;margin-bottom:8px;">${badgeTitle}</p>
+          <p style="font-size:13.5px;color:#5a4b3c;max-width:480px;margin:0 auto 18px;line-height:1.55;">
             ${feedbackMsg}
           </p>
         </div>
@@ -692,7 +695,7 @@
       ${
         isAnswered
           ? `<div class="quiz-explanation">
-              <strong style="color:#c4b5fd;display:block;margin-bottom:4px;">
+              <strong style="color:#7c382e;display:block;margin-bottom:4px;">
                 ${state.quizSelectedOption === q.correctIndex ? '✓ Chính xác!' : '✗ Chưa chính xác!'} Giải thích lịch sử:
               </strong>
               ${q.explanation}
