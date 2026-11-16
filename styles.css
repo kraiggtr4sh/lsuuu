@@ -1,60 +1,64 @@
 /* ==========================================================================
    HỆ QUẢ CHÍNH SÁCH THỰC DÂN Ở ĐÔNG NAM Á (THẾ KỶ XVI - XX)
-   Windows 11 Fluent Dark UI Style — Clean, Flat Surfaces, System UI Font
+   Cute Pastel Windows 11 Clean Style — Soft Pastel Palette, System UI Font
    ========================================================================== */
 
 :root {
-  /* Windows 11 Dark Mode Surface Palette */
-  --bg-deep: #11161d;
-  --bg-mica: rgba(24, 30, 39, 0.92);
-  --bg-card: #1b222c;
-  --bg-card-hover: #222b38;
-  --bg-card-subtle: #161c24;
-  --bg-control: #262f3d;
-  --bg-control-hover: #303b4c;
+  /* Cute Soft Pastel Cream & Cloud Background Palette */
+  --bg-deep: #fdfbf7;
+  --bg-mica: rgba(255, 255, 255, 0.88);
+  --bg-card: #ffffff;
+  --bg-card-hover: #fcfaff;
+  --bg-card-subtle: #f7f4ef;
+  --bg-control: #f2eee9;
+  --bg-control-hover: #e8e2da;
 
-  /* Clean 1px Hairline Borders (Win11 Card Stroke) */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.15);
-  --border-focus: rgba(255, 255, 255, 0.24);
+  /* Soft Pastel Borders */
+  --border-subtle: #e6dfd5;
+  --border-strong: #d4c9bc;
+  --border-focus: #b8ab9c;
 
-  /* Typography Colors */
-  --text-primary: #f3f4f6;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
-  --win-accent: #60cdff;
+  /* Soft Charcoal & Slate Typography (Easy on the eyes, cute aesthetic) */
+  --text-primary: #334155;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --win-accent: #7aa2f7;
 
-  /* 4 Branch Solid Colors (No heavy glow) */
-  --color-pol: #ef4444;
-  --color-pol-soft: rgba(239, 68, 68, 0.12);
+  /* 4 Branch Cute Pastel Colors */
+  --color-pol: #f28482;                  /* Pastel Coral Pink */
+  --color-pol-soft: #ffe5e5;
+  --color-pol-text: #c94a48;
 
-  --color-eco: #eab308;
-  --color-eco-soft: rgba(234, 179, 8, 0.12);
+  --color-eco: #f4a261;                  /* Pastel Honey Peach / Butter */
+  --color-eco-soft: #fff1d6;
+  --color-eco-text: #b86b28;
 
-  --color-soc: #22c55e;
-  --color-soc-soft: rgba(34, 197, 94, 0.12);
+  --color-soc: #52b788;                  /* Pastel Mint Matcha */
+  --color-soc-soft: #def7ec;
+  --color-soc-text: #2b7a56;
 
-  --color-cul: #a855f7;
-  --color-cul-soft: rgba(168, 85, 247, 0.12);
+  --color-cul: #9d8df1;                  /* Pastel Lavender Lilac */
+  --color-cul-soft: #f0ebff;
+  --color-cul-text: #6552c7;
 
-  /* Impact Tag Colors (Flat, Crisp) */
-  --impact-neg-bg: rgba(239, 68, 68, 0.12);
-  --impact-neg-border: rgba(239, 68, 68, 0.35);
-  --impact-neg-text: #fca5a5;
+  /* Impact Tag Colors (Cute Pastel Pills) */
+  --impact-neg-bg: #ffe8e8;
+  --impact-neg-border: #f8b4b4;
+  --impact-neg-text: #c83e3e;
 
-  --impact-pos-bg: rgba(56, 189, 248, 0.12);
-  --impact-pos-border: rgba(56, 189, 248, 0.35);
-  --impact-pos-text: #7dd3fc;
+  --impact-pos-bg: #e0f2fe;
+  --impact-pos-border: #93c5fd;
+  --impact-pos-text: #1d6fa5;
 
   /* Windows 11 System UI Font Stack */
   --font-sans: 'Segoe UI Variable Display', 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif: var(--font-sans);
   --font-mono: 'Cascadia Code', 'Consolas', ui-monospace, monospace;
 
-  /* Win11 Elevation Shadows (Clean depth, no neon glow) */
-  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.28), 0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-card-hover: 0 8px 20px rgba(0, 0, 0, 0.38), 0 2px 6px rgba(0, 0, 0, 0.24);
-  --shadow-flyout: 0 12px 32px rgba(0, 0, 0, 0.48), 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* Clean Soft Pastel Elevation Shadows */
+  --shadow-card: 0 4px 14px rgba(148, 136, 120, 0.09), 0 1px 3px rgba(148, 136, 120, 0.06);
+  --shadow-card-hover: 0 10px 24px rgba(148, 136, 120, 0.15), 0 2px 6px rgba(148, 136, 120, 0.08);
+  --shadow-flyout: 0 14px 36px rgba(100, 90, 80, 0.16), 0 2px 8px rgba(100, 90, 80, 0.08);
 }
 
 * {
@@ -77,7 +81,7 @@ html, body {
 }
 
 /* ==========================================================================
-   BACKGROUND DOT GRID (CLEAN, NO AMBIENT NEON BLOBS)
+   BACKGROUND DOT GRID (PASTEL CREAM PAPER & POLKA DOTS)
    ========================================================================== */
 .app-container {
   position: relative;
@@ -85,7 +89,7 @@ html, body {
   height: 100vh;
   overflow: hidden;
   background-color: var(--bg-deep);
-  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(#d8cfc4 1.35px, transparent 1.35px);
   background-size: 24px 24px;
   background-position: 0 0;
 }
@@ -95,7 +99,7 @@ html, body {
 }
 
 /* ==========================================================================
-   TOP COMMAND BAR (WINDOWS 11 APP BAR STYLE)
+   TOP COMMAND BAR (WINDOWS 11 PASTEL MICA BAR)
    ========================================================================== */
 .top-navbar {
   position: fixed;
@@ -107,31 +111,31 @@ html, body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 8px 14px;
+  padding: 8px 16px;
   background: var(--bg-mica);
-  backdrop-filter: blur(20px) saturate(120%);
-  -webkit-backdrop-filter: blur(20px) saturate(120%);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 14px;
   box-shadow: var(--shadow-card);
 }
 
 .brand-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
 }
 
 .brand-badge {
-  width: 34px;
-  height: 34px;
-  border-radius: 6px;
-  background: var(--bg-control);
-  border: 1px solid var(--border-subtle);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #eef2ff;
+  border: 1.5px solid #c7d2fe;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--win-accent);
+  color: #6366f1;
   flex-shrink: 0;
 }
 
@@ -142,25 +146,25 @@ html, body {
 
 .brand-eyebrow {
   font-size: 11px;
-  color: var(--text-secondary);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  color: #8b5cf6;
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .brand-title {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 14.5px;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
-/* Windows 11 Segmented Filter Bar */
+/* Segmented Filter Bar */
 .filter-bar {
   display: flex;
   align-items: center;
   gap: 4px;
-  background: #141920;
-  padding: 3px;
-  border-radius: 6px;
+  background: #f5f0e8;
+  padding: 4px;
+  border-radius: 11px;
   border: 1px solid var(--border-subtle);
 }
 
@@ -168,7 +172,7 @@ html, body {
   font-size: 12px;
   color: var(--text-secondary);
   padding: 0 8px;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -178,28 +182,29 @@ html, body {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 11px;
-  border-radius: 5px;
+  padding: 5px 12px;
+  border-radius: 8px;
   border: 1px solid transparent;
   background: transparent;
   color: var(--text-secondary);
   font-family: var(--font-sans);
   font-size: 12.5px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition: all 0.15s ease;
   white-space: nowrap;
 }
 
 .filter-btn:hover {
   color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .filter-btn.active {
-  background: var(--bg-control);
+  background: #ffffff;
   border-color: var(--border-subtle);
   color: var(--text-primary);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .filter-btn.active[data-filter="negative"] {
@@ -221,25 +226,25 @@ html, body {
 }
 
 .filter-dot.all {
-  background: #9ca3af;
+  background: #a78bfa;
 }
 .filter-dot.neg {
-  background: #ef4444;
+  background: #f28482;
 }
 .filter-dot.pos {
-  background: #38bdf8;
+  background: #60a5fa;
 }
 
 .filter-count {
   font-family: var(--font-mono);
   font-size: 11px;
   padding: 0 6px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.05);
   color: inherit;
 }
 
-/* Right Action Buttons (Win11 Standard Button) */
+/* Right Action Buttons */
 .nav-actions {
   display: flex;
   align-items: center;
@@ -250,21 +255,21 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid var(--border-subtle);
-  background: var(--bg-control);
+  padding: 6px 13px;
+  border-radius: 9px;
+  border: 1.5px solid var(--border-subtle);
+  background: #ffffff;
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 12.5px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition: all 0.15s ease;
   white-space: nowrap;
 }
 
 .action-btn:hover {
-  background: var(--bg-control-hover);
+  background: var(--bg-control);
   border-color: var(--border-strong);
 }
 
@@ -273,13 +278,14 @@ html, body {
 }
 
 .action-btn.quiz-btn {
-  background: #0067c0;
-  border-color: rgba(255, 255, 255, 0.14);
-  color: #ffffff;
+  background: #ede9fe;
+  border-color: #c4b5fd;
+  color: #5b21b6;
 }
 
 .action-btn.quiz-btn:hover {
-  background: #1874d0;
+  background: #ddd6fe;
+  border-color: #a78bfa;
 }
 
 /* ==========================================================================
@@ -326,13 +332,13 @@ html, body {
 }
 
 .bezier-path.primary-branch {
-  stroke-width: 2.5px;
+  stroke-width: 3px;
   opacity: 0.85;
 }
 
 .bezier-path.sub-branch {
-  stroke-width: 1.75px;
-  opacity: 0.65;
+  stroke-width: 2.2px;
+  opacity: 0.72;
 }
 
 .bezier-path.animated-flow {
@@ -340,16 +346,16 @@ html, body {
 }
 
 .bezier-path.dimmed {
-  opacity: 0.12 !important;
+  opacity: 0.15 !important;
 }
 
 .bezier-path.highlighted {
-  stroke-width: 2.75px;
+  stroke-width: 3.2px;
   opacity: 1 !important;
 }
 
 /* ==========================================================================
-   MIND MAP NODES (CLEAN WINDOWS 11 CARDS)
+   MIND MAP NODES (CUTE PASTEL ROUNDED CARDS)
    ========================================================================== */
 .nodes-layer {
   position: absolute;
@@ -372,15 +378,15 @@ html, body {
               box-shadow 0.2s ease;
 }
 
-/* 1. CENTER NODE (Circular Hub, Clean Subtle Border) */
+/* 1. CENTER NODE (Cute Cloud Circle Hub) */
 .center-node {
-  width: 296px;
-  height: 296px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  background: var(--bg-card);
-  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  background: #ffffff;
+  border: 2.5px solid #e2d9f3;
   box-shadow:
-    0 0 0 6px rgba(255, 255, 255, 0.03),
+    0 0 0 8px rgba(237, 233, 254, 0.55),
     var(--shadow-flyout);
   display: flex;
   flex-direction: column;
@@ -393,20 +399,23 @@ html, body {
 }
 
 .center-node:hover {
-  background: var(--bg-card-hover);
-  border-color: rgba(255, 255, 255, 0.28);
+  transform: translate(-50%, -50%) scale(1.02);
+  border-color: #c4b5fd;
+  box-shadow:
+    0 0 0 10px rgba(237, 233, 254, 0.8),
+    var(--shadow-card-hover);
 }
 
 .center-period-badge {
   font-family: var(--font-mono);
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--win-accent);
-  background: rgba(96, 205, 255, 0.1);
-  border: 1px solid rgba(96, 205, 255, 0.25);
-  padding: 3px 10px;
+  color: #6d28d9;
+  background: #f3e8ff;
+  border: 1px solid #d8b4fe;
+  padding: 3px 12px;
   border-radius: 99px;
   margin-bottom: 10px;
 }
@@ -433,19 +442,19 @@ html, body {
 }
 
 .center-quadrant-dots span {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   box-shadow: none !important;
 }
 
-/* 2. PRIMARY BRANCH NODES (4 MAIN PILLARS - WIN11 CARD) */
+/* 2. PRIMARY BRANCH NODES (4 MAIN PILLARS - PASTEL HEADER CARDS) */
 .branch-node {
-  width: 268px;
-  border-radius: 8px;
+  width: 270px;
+  border-radius: 14px;
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-top: 3px solid var(--branch-color, #64748b);
+  border: 1.5px solid var(--border-subtle);
+  border-top: 4px solid var(--branch-color, #94a3b8);
   box-shadow: var(--shadow-card);
   padding: 14px 16px;
   cursor: pointer;
@@ -453,9 +462,10 @@ html, body {
 }
 
 .branch-node:hover {
+  transform: translate(-50%, -50%) translateY(-2px);
   background: var(--bg-card-hover);
-  border-color: var(--border-strong);
-  border-top-color: var(--branch-color);
+  border-color: var(--branch-color);
+  border-top-width: 4px;
   box-shadow: var(--shadow-card-hover);
 }
 
@@ -468,11 +478,11 @@ html, body {
 }
 
 .branch-icon-wrap {
-  width: 36px;
-  height: 36px;
-  border-radius: 6px;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
   background: var(--branch-soft);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--branch-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -485,41 +495,36 @@ html, body {
 }
 
 .branch-index {
-  font-size: 10.5px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   color: var(--text-secondary);
   display: block;
 }
 
 .branch-name {
   font-size: 15.5px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
 .branch-toggle-btn {
-  width: 26px;
-  height: 26px;
-  border-radius: 5px;
-  background: var(--bg-control);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--branch-soft);
+  border: 1px solid transparent;
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.25s ease, background 0.15s ease;
 }
 
-.branch-node:hover .branch-toggle-btn {
-  color: var(--text-primary);
-}
-
 .branch-node.collapsed .branch-toggle-btn {
   transform: rotate(-90deg);
-  background: var(--branch-soft);
-  color: var(--branch-color);
+  border-color: var(--branch-color);
 }
 
 .branch-summary {
@@ -534,7 +539,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   padding-top: 8px;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px dashed var(--border-subtle);
   font-size: 11px;
   color: var(--text-muted);
 }
@@ -545,10 +550,10 @@ html, body {
 }
 
 .mini-pill {
-  padding: 2px 6px;
-  border-radius: 4px;
+  padding: 2px 7px;
+  border-radius: 6px;
   font-size: 10.5px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .mini-pill.neg {
@@ -561,13 +566,13 @@ html, body {
   color: var(--impact-pos-text);
 }
 
-/* 3. SUB-BRANCH NODES (12 HISTORICAL LEAF CARDS - WIN11 SURFACE) */
+/* 3. SUB-BRANCH NODES (12 HISTORICAL LEAF CARDS - CUTE PASTEL CARDS) */
 .leaf-node {
   width: 324px;
-  border-radius: 8px;
+  border-radius: 14px;
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-left: 3px solid var(--branch-color, #ef4444);
+  border: 1.5px solid var(--border-subtle);
+  border-left: 5px solid var(--branch-color, #f28482);
   box-shadow: var(--shadow-card);
   padding: 12px 14px;
   cursor: pointer;
@@ -578,9 +583,10 @@ html, body {
 }
 
 .leaf-node:hover {
+  transform: translate(-50%, -50%) translateY(-2px);
   background: var(--bg-card-hover);
-  border-color: var(--border-strong);
-  border-left-color: var(--branch-color);
+  border-color: var(--branch-color);
+  border-left-width: 5px;
   box-shadow: var(--shadow-card-hover);
   z-index: 15;
 }
@@ -592,13 +598,13 @@ html, body {
 }
 
 .leaf-node.filter-dimmed {
-  opacity: 0.22;
-  filter: grayscale(80%);
+  opacity: 0.28;
+  filter: grayscale(70%);
 }
 
 .leaf-node.filter-highlighted {
   border-color: var(--branch-color);
-  background: var(--bg-card-hover);
+  background: #ffffff;
   box-shadow: var(--shadow-card-hover);
 }
 
@@ -611,7 +617,7 @@ html, body {
 
 .leaf-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   line-height: 1.35;
 }
@@ -621,9 +627,9 @@ html, body {
   align-items: center;
   gap: 4px;
   padding: 2px 8px;
-  border-radius: 4px;
+  border-radius: 99px;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -651,9 +657,9 @@ html, body {
   position: relative;
   width: 92px;
   height: 78px;
-  border-radius: 6px;
+  border-radius: 9px;
   overflow: hidden;
-  background: #141414;
+  background: #f3ede2;
   border: 1px solid var(--border-subtle);
   flex-shrink: 0;
 }
@@ -662,13 +668,13 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(65%) sepia(32%) contrast(1.06) brightness(0.92);
+  filter: grayscale(45%) sepia(28%) contrast(1.02) brightness(0.98);
   transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 .leaf-node:hover .archival-thumb-frame img {
   transform: scale(1.05);
-  filter: grayscale(30%) sepia(20%) contrast(1.05) brightness(0.98);
+  filter: grayscale(15%) sepia(15%) contrast(1.02) brightness(1);
 }
 
 .archival-thumb-overlay {
@@ -683,8 +689,8 @@ html, body {
 .zoom-icon-pill {
   width: 20px;
   height: 20px;
-  border-radius: 4px;
-  background: rgba(17, 22, 29, 0.85);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text-primary);
   display: flex;
   align-items: center;
@@ -709,7 +715,7 @@ html, body {
   justify-content: space-between;
   gap: 8px;
   padding-top: 8px;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px dashed var(--border-subtle);
   font-size: 11px;
   color: var(--text-muted);
 }
@@ -726,7 +732,7 @@ html, body {
 
 .leaf-more-link {
   color: var(--text-primary);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 11px;
   display: inline-flex;
   align-items: center;
@@ -735,7 +741,7 @@ html, body {
 }
 
 /* ==========================================================================
-   BOTTOM TASKBAR HUD & CONTROLS (WIN11 FLOAT BAR)
+   BOTTOM TASKBAR HUD & CONTROLS (PASTEL FLOAT BAR)
    ========================================================================== */
 .bottom-hud {
   position: fixed;
@@ -753,8 +759,8 @@ html, body {
   pointer-events: auto;
   background: var(--bg-mica);
   backdrop-filter: blur(20px);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 12px;
   padding: 6px 12px;
   display: flex;
   align-items: center;
@@ -773,22 +779,23 @@ html, body {
   align-items: center;
   gap: 6px;
   font-size: 12px;
+  font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
   padding: 4px 8px;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .legend-item:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--bg-control);
   color: var(--text-primary);
 }
 
 .legend-swatch {
-  width: 10px;
-  height: 10px;
-  border-radius: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 4px;
   box-shadow: none !important;
 }
 
@@ -800,7 +807,7 @@ html, body {
 
 .hint-text {
   font-size: 12px;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -813,8 +820,8 @@ html, body {
   gap: 4px;
   background: var(--bg-mica);
   backdrop-filter: blur(20px);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 12px;
   padding: 4px;
   box-shadow: var(--shadow-card);
 }
@@ -823,13 +830,13 @@ html, body {
   height: 30px;
   min-width: 30px;
   padding: 0 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid transparent;
   background: transparent;
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -846,18 +853,20 @@ html, body {
 .zoom-level-readout {
   font-family: var(--font-mono);
   font-size: 11.5px;
+  font-weight: 600;
   color: var(--text-secondary);
   min-width: 46px;
   text-align: center;
 }
 
 /* ==========================================================================
-   DETAIL DRAWER (WIN11 FLYOUT PANE)
+   DETAIL DRAWER (PASTEL FLYOUT PANE)
    ========================================================================== */
 .drawer-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(51, 65, 85, 0.25);
+  backdrop-filter: blur(2px);
   z-index: 60;
   opacity: 0;
   pointer-events: none;
@@ -875,9 +884,9 @@ html, body {
   bottom: 12px;
   right: 12px;
   width: min(540px, calc(100vw - 24px));
-  background: #181f29;
-  border: 1px solid var(--border-strong);
-  border-radius: 10px;
+  background: #ffffff;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 16px;
   box-shadow: var(--shadow-flyout);
   z-index: 70;
   transform: translateX(calc(100% + 24px));
@@ -897,7 +906,7 @@ html, body {
   justify-content: space-between;
   padding: 14px 20px;
   border-bottom: 1px solid var(--border-subtle);
-  background: #141a23;
+  background: #faf7f2;
 }
 
 .drawer-branch-tag {
@@ -905,17 +914,17 @@ html, body {
   align-items: center;
   gap: 6px;
   font-size: 11.5px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 3px 10px;
-  border-radius: 4px;
+  border-radius: 99px;
 }
 
 .drawer-close-btn {
   width: 30px;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid transparent;
-  background: transparent;
+  background: var(--bg-control);
   color: var(--text-secondary);
   display: flex;
   align-items: center;
@@ -925,8 +934,8 @@ html, body {
 }
 
 .drawer-close-btn:hover {
-  color: #ffffff;
-  background: #c42b1c;
+  color: #c83e3e;
+  background: #ffe5e5;
 }
 
 .drawer-content {
@@ -942,7 +951,7 @@ html, body {
   width: 6px;
 }
 .drawer-content::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.16);
+  background: #d4c9bc;
   border-radius: 99px;
 }
 
@@ -954,7 +963,7 @@ html, body {
 
 .drawer-title {
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   line-height: 1.3;
 }
@@ -963,7 +972,7 @@ html, body {
 .archival-showcase-card {
   background: var(--bg-card-subtle);
   border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 10px;
 }
 
@@ -971,29 +980,29 @@ html, body {
   position: relative;
   width: 100%;
   height: 245px;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border-subtle);
-  background: #0d1015;
+  background: #ede6da;
 }
 
 .archival-photo-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(60%) sepia(32%) contrast(1.06) brightness(0.95);
+  filter: grayscale(45%) sepia(28%) contrast(1.03) brightness(0.98);
   transition: filter 0.3s ease;
 }
 
 .archival-photo-container:hover img {
-  filter: grayscale(20%) sepia(15%) contrast(1.04) brightness(1);
+  filter: grayscale(10%) sepia(12%) contrast(1.02) brightness(1);
 }
 
 .archival-vignette {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  box-shadow: inset 0 0 32px rgba(0, 0, 0, 0.55);
+  box-shadow: inset 0 0 28px rgba(80, 65, 50, 0.25);
 }
 
 .archival-stamp {
@@ -1002,10 +1011,11 @@ html, body {
   left: 8px;
   font-family: var(--font-mono);
   font-size: 10.5px;
+  font-weight: 600;
   padding: 3px 8px;
-  border-radius: 4px;
-  background: rgba(17, 22, 29, 0.88);
-  color: var(--text-secondary);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-primary);
   border: 1px solid var(--border-subtle);
 }
 
@@ -1021,16 +1031,16 @@ html, body {
 
 /* Drawer Sections */
 .dossier-section {
-  background: var(--bg-card-subtle);
+  background: #faf7f2;
   border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 14px 16px;
 }
 
 .dossier-section-title {
   font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-weight: 700;
+  color: #6d28d9;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -1063,10 +1073,10 @@ html, body {
   position: absolute;
   left: 0;
   top: 8px;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: var(--win-accent);
+  background: #a78bfa;
 }
 
 /* Two-Sided Dialectical Impact Evaluation Box */
@@ -1077,23 +1087,27 @@ html, body {
 }
 
 .impact-eval-card {
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 12px;
   border: 1px solid var(--border-subtle);
-  background: var(--bg-card);
+  background: #ffffff;
 }
 
 .impact-eval-card.neg-card {
-  border-left: 3px solid #ef4444;
+  background: #fff5f5;
+  border-color: #fecaca;
+  border-left: 4px solid #f28482;
 }
 
 .impact-eval-card.pos-card {
-  border-left: 3px solid #38bdf8;
+  background: #f0f9ff;
+  border-color: #bae6fd;
+  border-left: 4px solid #60a5fa;
 }
 
 .impact-eval-header {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 6px;
   display: flex;
   align-items: center;
@@ -1101,35 +1115,36 @@ html, body {
 }
 
 .impact-eval-card.neg-card .impact-eval-header {
-  color: #fca5a5;
+  color: #c83e3e;
 }
 
 .impact-eval-card.pos-card .impact-eval-header {
-  color: #7dd3fc;
+  color: #1d6fa5;
 }
 
 .impact-eval-body {
   font-size: 12.5px;
   line-height: 1.5;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .drawer-footer-nav {
   padding: 12px 20px;
   border-top: 1px solid var(--border-subtle);
-  background: #141a23;
+  background: #faf7f2;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* ==========================================================================
-   MINI QUIZ MODAL (WINDOWS 11 CONTENT DIALOG)
+   MINI QUIZ MODAL (PASTEL CONTENT DIALOG)
    ========================================================================== */
 .quiz-modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(51, 65, 85, 0.32);
+  backdrop-filter: blur(3px);
   z-index: 80;
   display: flex;
   align-items: center;
@@ -1148,9 +1163,9 @@ html, body {
 .quiz-modal {
   width: min(620px, 96vw);
   max-height: 90vh;
-  background: #1b222c;
-  border: 1px solid var(--border-strong);
-  border-radius: 10px;
+  background: #ffffff;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 16px;
   box-shadow: var(--shadow-flyout);
   display: flex;
   flex-direction: column;
@@ -1165,7 +1180,7 @@ html, body {
 
 .quiz-header {
   padding: 14px 20px;
-  background: #141a23;
+  background: #faf7f2;
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
@@ -1174,7 +1189,7 @@ html, body {
 
 .quiz-header-title {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   display: flex;
   align-items: center;
@@ -1182,14 +1197,14 @@ html, body {
 }
 
 .quiz-progress-bar {
-  height: 3px;
-  background: rgba(255, 255, 255, 0.06);
+  height: 4px;
+  background: #f3e8ff;
   width: 100%;
 }
 
 .quiz-progress-fill {
   height: 100%;
-  background: #0067c0;
+  background: #a78bfa;
   transition: width 0.25s ease;
 }
 
@@ -1206,12 +1221,13 @@ html, body {
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
+  font-weight: 600;
   color: var(--text-secondary);
 }
 
 .quiz-question-text {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.45;
   color: var(--text-primary);
 }
@@ -1225,12 +1241,13 @@ html, body {
 .quiz-option-btn {
   text-align: left;
   padding: 11px 14px;
-  border-radius: 6px;
-  border: 1px solid var(--border-subtle);
-  background: var(--bg-card-subtle);
+  border-radius: 10px;
+  border: 1.5px solid var(--border-subtle);
+  background: #faf7f2;
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 13.5px;
+  font-weight: 500;
   line-height: 1.45;
   cursor: pointer;
   display: flex;
@@ -1240,64 +1257,64 @@ html, body {
 }
 
 .quiz-option-btn:hover:not(:disabled) {
-  border-color: var(--border-strong);
-  background: var(--bg-control);
+  border-color: #a78bfa;
+  background: #f5f3ff;
 }
 
 .quiz-option-letter {
   width: 26px;
   height: 26px;
-  border-radius: 5px;
-  background: var(--bg-control);
+  border-radius: 7px;
+  background: #ffffff;
   border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-mono);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 12px;
   flex-shrink: 0;
 }
 
 .quiz-option-btn.correct {
-  background: rgba(34, 197, 94, 0.12);
-  border-color: rgba(34, 197, 94, 0.5);
-  color: #bbf7d0;
+  background: #def7ec;
+  border-color: #52b788;
+  color: #1e563c;
 }
 
 .quiz-option-btn.correct .quiz-option-letter {
-  background: #22c55e;
-  color: #052e16;
-  border-color: #22c55e;
+  background: #52b788;
+  color: #ffffff;
+  border-color: #52b788;
 }
 
 .quiz-option-btn.wrong {
-  background: rgba(239, 68, 68, 0.12);
-  border-color: rgba(239, 68, 68, 0.5);
-  color: #fecaca;
+  background: #ffe5e5;
+  border-color: #f28482;
+  color: #9b2c2c;
 }
 
 .quiz-option-btn.wrong .quiz-option-letter {
-  background: #ef4444;
-  color: #450a0a;
-  border-color: #ef4444;
+  background: #f28482;
+  color: #ffffff;
+  border-color: #f28482;
 }
 
 .quiz-explanation {
   padding: 12px 14px;
-  border-radius: 6px;
-  background: var(--bg-card-subtle);
-  border: 1px solid var(--border-subtle);
-  border-left: 3px solid var(--win-accent);
+  border-radius: 10px;
+  background: #f5f3ff;
+  border: 1px solid #ddd6fe;
+  border-left: 4px solid #8b5cf6;
   font-size: 13px;
   line-height: 1.55;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .quiz-footer {
   padding: 14px 20px;
   border-top: 1px solid var(--border-subtle);
-  background: #141a23;
+  background: #faf7f2;
   display: flex;
   align-items: center;
   justify-content: space-between;
